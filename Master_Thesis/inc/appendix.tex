@@ -1,0 +1,248 @@
+\chapter{Prompts and Human Review Material}
+\section{LLM Extraction Prompts}
+\label{app:extraction-prompts}
+
+The following prompts were used in
+\texttt{llm\_extract\_relations.py} for schema-constrained
+entity and relation extraction. The system prompt defines the
+output schema and extraction rules. The user prompt supplies
+the guideline identifier, page number, known entities on the
+page, and the raw text chunk to process.
+
+\subsection*{System Prompt}
+
+\begin{lstlisting}[language={},
+  basicstyle=\small\ttfamily,
+  breaklines=true,
+  frame=single,
+  caption={LLM extraction system prompt.}]
+
+You are a clinical knowledge graph extractor specialising in diabetes guidelines.
+
+Extract ONLY the following entity types from the TEXT:
+{entity_type_descriptions}
+
+Extract ONLY the following relation types:
+{relation_type_descriptions}
+
+RULES:
+- Return STRICT JSON with keys: "entities" (list) and "relations" (list).
+- Each entity needs: "id" (short unique string within this response), "type" (from the list above), "name" (canonical name), "organization" (which guideline this came from).
+- Each relation needs: "type" (from list above), "from" (entity id), "to" (entity id).
+- Drug names: use the most specific name mentioned. If a class is mentioned (e.g. SGLT2 inhibitor), create a class entity. If a specific drug is mentioned (e.g. empagliflozin), create both.
+- Do NOT extract GlycaemicTarget, Recommendation, or numeric thresholds -- those are handled separately.
+- Do NOT invent relations not explicitly stated in the text.
+- If nothing relevant is found, return: {{"entities": [], "relations": []}}
+- Return ONLY JSON. No markdown fences. No commentary.
+
+\end{lstlisting}
+\subsection*{User Prompt Template}
+\begin{lstlisting}[language={},
+  basicstyle=\small\ttfamily,
+  breaklines=true,
+  frame=single,
+  caption={LLM extraction user prompt template. Placeholders in
+           braces are substituted at runtime.}]
+GUIDELINE: {org} ({year})
+PAGE: {page}
+
+KNOWN FACTS ON THIS PAGE (already extracted -- do not re-extract these):
+{known_facts}
+
+TEXT:
+{chunk_text}
+
+Return ONLY JSON.
+\end{lstlisting}
+\newpage
+\section{Question Generation Prompts}
+\label{app:qgen-prompts}
+
+The following system and user prompts were used in
+\texttt{generate\_questions\_hybrid.py}.
+Each generation method has a dedicated builder function that
+constructs both prompts from the graph anchor at runtime.
+Placeholders in braces are substituted from the anchor fields.
+
+
+\subsection*{Graph-Grounded Prompt}
+
+\begin{lstlisting}[language={},
+  basicstyle=\small\ttfamily,
+  breaklines=true,
+  frame=single,
+  caption={System prompt: Graph-Grounded Prompt.}]
+You are a clinical medical education assistant.  You write clear, accurate questions for healthcare students studying diabetes management.  Use only the clinical information in the FACT block; do not add drug names,  thresholds, or guidelines that are not stated there.  Write the question as a standalone exam question.  Never refer to 'the fact', 'the provided fact', 'the context', 'the passage',  or the guideline source inside the question. A student reading the question  must not be able to tell it was generated from a supplied fact.
+\end{lstlisting}
+
+\begin{lstlisting}[language={},
+  basicstyle=\small\ttfamily,
+  breaklines=true,
+  frame=single,
+  caption={User prompt template: Graph-Grounded Prompt.}]
+{context}
+
+Task: Write ONE clinical {qtype} question that tests knowledge of this fact.
+{focus_line}- The question must be answerable from the FACT above
+- Do not mention page numbers, guideline names, or 'the provided fact'
+- Write in clear, professional clinical language
+- Output ONLY the question text, nothing else
+\end{lstlisting}
+\newpage
+\subsection*{Clinical Vignette}
+
+\begin{lstlisting}[language={},
+  basicstyle=\small\ttfamily,
+  breaklines=true,
+  frame=single,
+  caption={System prompt: Clinical Vignette.}]
+You are a clinical medical education assistant writing case-based questions  for diabetes management training.  IMPORTANT: Base the clinical scenario ONLY on the facts provided.  You may describe the patient's condition and symptoms in words,  but must NOT include any numerical values (no ages, no HbA1c values,  no glucose readings, no doses) and must NOT introduce drug names,  targets, or guidelines beyond what is stated in the CLINICAL FACT block.
+\end{lstlisting}
+
+
+\begin{lstlisting}[language={},
+  basicstyle=\small\ttfamily,
+  breaklines=true,
+  frame=single,
+  caption={User prompt template: Clinical Vignette.}]
+{context}
+
+Task: Write a short clinical vignette question (2-3 sentences).
+- Describe a realistic patient with {dst_name} using only words (no numbers)
+- End with a question about pharmacological management
+- The correct answer must be {src_name} (but do not give it away in the question)
+- Do NOT include any numerical values in the question
+- Output ONLY the question text, nothing else
+\end{lstlisting}
+
+\subsection*{Question Reformulation}
+
+\begin{lstlisting}[language={},
+  basicstyle=\small\ttfamily,
+  breaklines=true,
+  frame=single,
+  caption={System prompt: Question Reformulation.}]
+You are a clinical medical education assistant.  You rephrase questions for different difficulty levels without changing the factual content.
+\end{lstlisting}
+
+\begin{lstlisting}[language={},
+  basicstyle=\small\ttfamily,
+  breaklines=true,
+  frame=single,
+  caption={User prompt template: Question Reformulation.}]
+Original question: "{canonical}"
+
+Task: Rewrite this question at three difficulty levels.
+Return ONLY a JSON object with this exact structure:
+{{
+  "recall":      "direct factual question (easiest)",
+  "application": "clinical scenario requiring application of the fact",
+  "analysis":    "comparative or reasoning question (hardest)"
+}}
+Do not change any drug names, numerical values, guideline names, or clinical facts.
+\end{lstlisting}
+
+\subsection*{MCQ Distractor Generation}
+
+\begin{lstlisting}[language={},
+  basicstyle=\small\ttfamily,
+  breaklines=true,
+  frame=single,
+  caption={System prompt: MCQ Distractor Generation.}]
+You are a clinical medical education expert creating multiple-choice questions  for diabetes pharmacology assessment.
+\end{lstlisting}
+
+\begin{lstlisting}[language={},
+  basicstyle=\small\ttfamily,
+  breaklines=true,
+  frame=single,
+  caption={User prompt template: MCQ Distractor Generation.}]
+Question: {question}
+Correct answer: {correct_answer}
+
+Task: Generate exactly 3 wrong but plausible distractor options for this multiple-choice question.
+Rules:
+- Distractors must be real diabetes medications or clinical values (choose from: {pool_str})
+- Do NOT include "{correct_answer}" as a distractor
+- Distractors should be clinically plausible (a student could reasonably consider them)
+- Return ONLY a JSON object with this exact structure: {{"distractors": ["option1", "option2", "option3"]}}
+\end{lstlisting}
+
+\newpage
+\section{Human Review Question Set 1 (Reviewer: Dr.~Aakanksha)}
+\label{app:review-set-1}
+
+Reviewers were shown the question text only, without the graph anchor,
+answer key, or source guideline passage.
+
+\begin{enumerate}
+\item A middle-aged woman with a longstanding history of type 2 diabetes presents to her nephrologist with progressive decline in kidney function, persistent proteinuria, and signs of fluid retention consistent with chronic kidney disease. She has been struggling to achieve adequate glycemic control despite lifestyle modifications, and her physician is considering adding a pharmacological agent specifically indicated for managing chronic kidney disease in patients with her underlying condition. Which patient population is the primary target for this kidney-protective pharmacological management strategy?
+
+\item In a patient undergoing an oral glucose tolerance test, what 2-hour plasma glucose value meets the diagnostic threshold for type 2 diabetes?
+
+\item In the management of type 2 diabetes mellitus, which pharmacological approach involving the combination of agents within a single preparation is recommended as a treatment strategy?
+
+\item In a patient with type 2 diabetes, at what HbA1c threshold would a value be considered above the acceptable glycemic target, indicating suboptimal long-term blood glucose control?
+
+\item How does the 2-hour plasma glucose threshold used to diagnose diabetes on an oral glucose tolerance test according to the American Diabetes Association compare with the threshold recommended by the International Diabetes Federation?
+
+\item In a patient with type 2 diabetes, what is the target fasting plasma glucose level that indicates optimal glycemic control?
+
+\item Which non-pharmacological intervention is recommended as part of the management plan for a patient diagnosed with diabetes?
+
+\item Which medication, a glucagon-like peptide-1 receptor agonist, is recommended for the management of type 2 diabetes mellitus?
+
+\item A middle-aged woman with a longstanding history of type 2 diabetes presents to her general practitioner reporting recurrent episodes of shakiness, sweating, and light-headedness occurring throughout the week, consistent with hypoglycaemic events. She has no known drug allergies and is currently not on any glucose-lowering therapy. Which oral pharmacological agent is indicated to manage her hypoglycaemic events?
+
+\item In the management of diabetes, which medication is recommended for individuals who are unable to tolerate other pharmacological treatments?
+
+\item A middle-aged man with longstanding type 2 diabetes attends a review clinic at a busy urban practice serving a socioeconomically disadvantaged community. He reports difficulty affording medications, has limited access to healthy food, and faces significant barriers to engaging with lifestyle programmes. Which patient population characteristic is particularly relevant when considering the pharmacological management approach for his type 2 diabetes?
+
+\item Which class of medication is recommended for use in adults with type 2 diabetes: SGLT2 inhibitors?
+
+\item Which pharmacological agent is recommended for the management of diabetes in elderly male patients?
+
+\item A middle-aged woman with type 2 diabetes presents to her endocrinologist for a routine follow-up. She has a prior history of ischemic stroke and her physician is considering an oral antidiabetic agent that may offer additional benefit given her cerebrovascular history. Which pharmacological agent would be most appropriate to initiate in this patient to address both her glycemic management and her history of stroke?
+
+\item Which structured programme is recommended for individuals with type 2 diabetes who also have Heart Failure, with the aim of achieving disease remission?
+
+\end{enumerate}
+
+\section{Human Review Question Set 2 (Reviewer: Dr.~Mounika)}
+\label{app:review-set-2}
+
+Reviewers were shown the question text only, without the graph anchor,
+answer key, or source guideline passage.
+
+\begin{enumerate}
+\item A patient with type 1 diabetes mellitus is found to have impaired hypoglycaemic awareness. Based on established clinical recommendations, which intervention is advised for managing this condition?
+
+\item A middle-aged man with type 1 diabetes attends a follow-up appointment reporting persistent postprandial hyperglycemia, particularly after his evening meals, which typically consist of large portions of grilled meat, cheese, and nuts. He describes these meals as very filling and rich, with minimal carbohydrate content but substantial amounts of fat and protein. What pharmacological agent is most appropriate to manage his glycemic response to these high-fat, high-protein mixed meals?
+
+\item A patient with diabetes who sustains a fracture requires adjustment to their antidiabetic regimen. Which antidiabetic agent is recommended for use in the setting of a fracture?
+
+\item Which oral antidiabetic agent is recommended as a pharmacological treatment for children and adolescents diagnosed with type 2 diabetes?
+
+\item Which pharmacological agent is recommended for the management of type 2 diabetes mellitus?
+
+\item Which surgical intervention is recommended as a treatment option for patients with type 2 diabetes?
+
+\item A patient with type 2 diabetes is enrolled in the NHS Path to Remission programme. According to recommendations for this programme, which class of medication is indicated for this patient?
+
+\item A middle-aged woman with a longstanding history of type 2 diabetes presents to her GP reporting recurrent episodes of sweating, trembling, and confusion occurring several times a week, consistent with hypoglycaemic events. She is struggling to manage her condition and her diabetes control has been deteriorating despite ongoing treatment. Which structured programme should be considered to address her hypoglycaemic episodes as part of her overall diabetes management?
+
+\item In the management of hypoglycaemia, which monitoring method is recommended to assess capillary blood glucose levels?
+
+\item In a patient with type 2 diabetes undergoing a 2-hour oral glucose tolerance test, what is the target blood glucose level that should be achieved at the 2-hour mark?
+
+\item A middle-aged patient presents to the emergency department with several days of polyuria, polydipsia, and progressive nausea and vomiting, and is found to have deep, labored breathing along with an altered level of consciousness consistent with diabetic ketoacidosis. Laboratory findings confirm severe metabolic acidosis with elevated ketone bodies in the blood and urine. Which condition-based pharmacological management approach is indicated for this patient's acute presentation?
+
+\item Which class of medication is recommended for use within the NHS Path to Remission programme for the management of type 2 diabetes?
+
+\item Which programme is recommended for individuals who have experienced falls?
+
+\item A middle-aged woman with a history of frequent falls presents to her GP following her third fall in as many months, reporting dizziness and unsteadiness when standing. She has no other significant medical history and her GP is keen to explore structured management options to address her condition and reduce her risk of further falls. Which pharmacological management programme would be most appropriate to initiate for this patient?
+
+\item A patient with type 2 diabetes is found to have an increased cardiovascular risk during routine assessment. Which medication is recommended to help reduce this risk?
+
+\end{enumerate}

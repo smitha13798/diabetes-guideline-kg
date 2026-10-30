@@ -1,0 +1,82 @@
+{
+  "overall": {
+    "primary_questions": 491,
+    "reformulations": 1035,
+    "total_phrasings": 1526,
+    "mean_phrasings_per_anchor": 3.11,
+    "msttr": 0.7533,
+    "msttr_segment_size": 50
+  },
+  "generation_methods": {
+    "grounded_prompt": 355,
+    "vignette": 136
+  },
+  "by_relation": {
+    "HAS_TARGET": {
+      "total": 43,
+      "grounded_prompt": 43,
+      "vignette": 0,
+      "paraphrase": 0,
+      "mcq": 43
+    },
+    "EQUIVALENT_TO": {
+      "total": 8,
+      "grounded_prompt": 8,
+      "vignette": 0,
+      "paraphrase": 0,
+      "mcq": 0
+    },
+    "RECOMMENDED_FOR": {
+      "total": 304,
+      "grounded_prompt": 304,
+      "vignette": 0,
+      "paraphrase": 0,
+      "mcq": 0
+    },
+    "MANAGES": {
+      "total": 136,
+      "grounded_prompt": 0,
+      "vignette": 136,
+      "paraphrase": 0,
+      "mcq": 0
+    }
+  },
+  "by_question_type": {
+    "what": {
+      "total": 43,
+      "grounded_prompt": 43,
+      "vignette": 0,
+      "paraphrase": 0,
+      "mcq": 43,
+      "mcq_by_method": {
+        "grounded_prompt": 43,
+        "vignette": 0,
+        "paraphrase": 0
+      }
+    },
+    "how": {
+      "total": 144,
+      "grounded_prompt": 8,
+      "vignette": 136,
+      "paraphrase": 0,
+      "mcq": 0,
+      "mcq_by_method": {
+        "grounded_prompt": 0,
+        "vignette": 0,
+        "paraphrase": 0
+      }
+    },
+    "which": {
+      "total": 304,
+      "grounded_prompt": 304,
+      "vignette": 0,
+      "paraphrase": 0,
+      "mcq": 0,
+      "mcq_by_method": {
+        "grounded_prompt": 0,
+        "vignette": 0,
+        "paraphrase": 0
+      }
+    }
+  }
+}

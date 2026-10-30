@@ -1,0 +1,9 @@
+m Medication Systemsaffected Effect,,,
+A Acetaminophen,,,
+>4g/day,,"DexcomG6,DexcomG7",Highersensorreadingsthanactualglucose
+Anydose,,MedtronicGuardian4,Highersensorreadingsthanactualglucose
+"@ Ascorbicacid(vitaminC),>500mg/day",,"FreeStyleLibre2,FreeStyleLibre3",Highersensorreadingsthanactualglucose
+"Ascorbicacid(vitaminC),>1,000mg/day",,"FreeStyleLibre2Plus,FreeStyleLibre3Plus",Highersensorreadingsthanactualglucose
+Hydroxyurea,,"DexcomG6,DexcomG7,MedtronicGuardian4",Highersensorreadingsthanactualglucose
+Mannitol(intravenouslyorasperitoneal dialysissolution),,SenseonicsEversense365,Highersensorreadingsthanactualglucose
+Sorbitol(intravenouslyorasperitoneal dialysissolution),,SenseonicsEversense365,Highersensorreadingsthanactualglucose

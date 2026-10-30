@@ -1,0 +1,9 @@
+pymupdf>=1.24.3
+regex>=2024.5.15
+pyyaml>=6.0.1
+neo4j>=5.20.0
+pydantic>=2.7.0
+tqdm>=4.66.4
+pdfplumber
+requests>=2.31.0
+

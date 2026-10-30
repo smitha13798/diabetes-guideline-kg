@@ -1,0 +1,13 @@
+Substance orcondition,,PotentialeffectsonglucosereadingsmeasuredbyBGMs*
+Maltose†,,Falselyhigherbloodglucosereadings
+Galactose,,Falselyhigherbloodglucosereadings
+Xylose,,Falselyhigherbloodglucosereadings
+N-Acetylcysteine,,Falselyhigherorlowerbloodglucosereadings(dependingonBGMdesign)
+Acetaminophen,,Falselyhigherorlowerbloodglucosereadings(dependingonBGMdesign)
+Dopamine,,Falselyhigherorlowerbloodglucosereadings(dependingonBGMdesign)
+Pralidoxime(2-PAM),,Falselyhigherorlowerbloodglucosereadings(dependingonBGMdesign)
+Hydroxyurea,,Falselyhigherorlowerbloodglucosereadings(dependingonBGMdesign)
+VitaminC,,Falselyhigherorlowerbloodglucosereadings(dependingonBGMdesign)
+Hematocrit(high),,Falselylowerbloodglucosereadings
+Hematocrit(low),,Falselyhigherbloodglucosereadings
+*These are potential effects.There are blood glucose monitors (BGMs) that behave differ- ently than listed in this table. Refer to product labeling for product-specific information. †Unmodified glucose dehydrogenase pyrroloquinoline quinone (GDH/PQQ) enzyme method only.ModernBGMdesignsdonotincorporateunmodifiedGDH-PQQenzyme.,,

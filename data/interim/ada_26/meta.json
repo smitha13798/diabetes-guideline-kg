@@ -1,0 +1,30 @@
+{
+  "doc_id": "ada_26",
+  "source_file": "ADA_26.pdf",
+  "source_path": "C:\\Users\\sushm\\OneDrive\\Desktop\\Thesis\\kg-idf-starter\\data\\input\\ADA_26.pdf",
+  "organization": "ADA",
+  "geography": "US",
+  "year_hint": null,
+  "inference_method": "mixed",
+  "profile": "ADA",
+  "docling_ok": true,
+  "n_pages": 377,
+  "n_blocks": 5559,
+  "n_headings": 190,
+  "n_sections": 180,
+  "n_chunks": 1832,
+  "n_captions": 104,
+  "n_tables": 113,
+  "n_figures": 0,
+  "n_recommendations": 176,
+  "page_type_counts": {
+    "prose": 286,
+    "table_like": 64,
+    "figure_like": 26,
+    "frontmatter": 1
+  },
+  "notes": [
+    "No figures found"
+  ],
+  "status": "ok"
+}

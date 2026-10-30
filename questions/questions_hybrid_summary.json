@@ -1,0 +1,31 @@
+{
+  "total_generated": 1289,
+  "passed_validator": 1280,
+  "flagged_validator": 9,
+  "llm_fallbacks": 0,
+  "by_relation": {
+    "FIRST_LINE_FOR": 117,
+    "SECOND_LINE_FOR": 51,
+    "CONTRAINDICATED_IN": 107,
+    "RECOMMENDED_FOR": 383,
+    "HAS_TARGET": 21,
+    "EQUIVALENT_TO": 8,
+    "MANAGES": 265,
+    "USED_WITH": 60,
+    "REQUIRES_MONITORING": 45,
+    "MENTIONED_IN": 125,
+    "ASSOCIATED_WITH": 107
+  },
+  "by_qtype": {
+    "what": 233,
+    "how": 273,
+    "which": 676,
+    "yes_no": 107
+  },
+  "by_method": {
+    "vignette": 265,
+    "grounded_prompt": 899,
+    "paraphrase": 125
+  },
+  "mcq_generated": 296
+}

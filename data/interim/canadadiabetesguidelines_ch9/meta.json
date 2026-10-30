@@ -1,0 +1,29 @@
+{
+  "doc_id": "canadadiabetesguidelines_ch9",
+  "source_file": "CanadaDiabetesGuidelines_Ch9.pdf",
+  "source_path": "C:\\Users\\sushm\\OneDrive\\Desktop\\Thesis\\kg-idf-starter\\data\\input\\CanadaDiabetesGuidelines_Ch9.pdf",
+  "organization": "Diabetes Canada",
+  "geography": "Canada",
+  "year_hint": null,
+  "inference_method": "filename",
+  "profile": "Diabetes Canada",
+  "docling_ok": true,
+  "n_pages": 7,
+  "n_blocks": 89,
+  "n_headings": 2,
+  "n_sections": 3,
+  "n_chunks": 35,
+  "n_captions": 1,
+  "n_tables": 1,
+  "n_figures": 0,
+  "n_recommendations": 8,
+  "page_type_counts": {
+    "contents": 2,
+    "table_like": 1,
+    "prose": 4
+  },
+  "notes": [
+    "No figures found"
+  ],
+  "status": "ok"
+}

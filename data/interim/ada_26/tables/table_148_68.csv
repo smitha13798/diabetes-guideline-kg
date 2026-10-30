@@ -1,0 +1,11 @@
+Product Form,,,,"MedianAWP* (min,max)",,"MedianNADAC* (min,max)",,Dosage
+Glucagon,,Injectionpowder withdiluentfor,,"$303($180,$337)",,"$242($207,$242)",,n 1mg
+,,reconstitution,,,,,,o
+Glucagon,,Nasalpowder,,$357,,$285,,3mg
+Glucagon,,"Prefilledpen,",,$391,,"$303($303,$304)",,"i t 0.5mg,1mg"
+,,prefilledsyringe,,,,a,,
+Dasiglucagon,,"Prefilledpen,",,$371,,i $298,,0.6mg
+c prefilledsyringe,,,,,,,,
+"o AWP, average wholesale price; max, maximum; min, minimum; NADAC, National Average Drug Acquisition Cost. AWP and NADAC prices are as of 1 July 2025. *Calculated per unit",,,,,,,,
+(AWP[192]orNADAC[193]);medianAWPorNADACislistedalonewhenonlyoneproduct,,,,,,,,
+s and/orpriceisdescribed).,,,,,,,,

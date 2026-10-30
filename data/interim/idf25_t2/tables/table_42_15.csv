@@ -1,0 +1,20 @@
+Metric,Interpretation
+Number of days of CGM,
+Percentage of time CGM device is active,
+Coefficient of variation,Percentage coefficient of variation
+,"Intraday (i.e., within 24 h) and"
+,"Interday (i.e., over multiple days)"
+Time in range 70–180 mg/dL,Percentage readings and time
+(3.9–10.0 mmol/L),in range
+Time below range <70 mg/dL,Percentage readings and time
+(<3.9 mmol/L),below range
+including readings <54 mg/dL,
+(<3.0 mmol/L),
+Time below range <54 mg/dL,Percentage readings and time
+(<3.0 mmol/L),below range
+Time above range >180 mg/dL,Percentage readings and time
+(>10.0 mmol/L),above range
+including readings >250 mg/dL,
+(> 13.9 mmol/L),
+Time above range >250 mg/dL,Percentage readings and time
+(> 13.9 mmol/L),above range

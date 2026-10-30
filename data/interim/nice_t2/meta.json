@@ -1,0 +1,31 @@
+{
+  "doc_id": "nice_t2",
+  "source_file": "NICE_T2.pdf",
+  "source_path": "C:\\Users\\sushm\\OneDrive\\Desktop\\Thesis\\kg-idf-starter\\data\\input\\NICE_T2.pdf",
+  "organization": "NICE",
+  "geography": "UK",
+  "year_hint": null,
+  "inference_method": "mixed",
+  "profile": "NICE",
+  "docling_ok": true,
+  "n_pages": 124,
+  "n_blocks": 2063,
+  "n_headings": 236,
+  "n_sections": 237,
+  "n_chunks": 306,
+  "n_captions": 0,
+  "n_tables": 0,
+  "n_figures": 0,
+  "n_recommendations": 116,
+  "page_type_counts": {
+    "prose": 16,
+    "recommendations": 104,
+    "contents": 4
+  },
+  "notes": [
+    "No captions found",
+    "No tables found",
+    "No figures found"
+  ],
+  "status": "ok"
+}

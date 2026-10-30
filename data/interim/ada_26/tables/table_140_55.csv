@@ -1,0 +1,19 @@
+,Weartime,NumberofdaysCGMdeviceisworn,≥14-daywearforpatternmanagement
+,e Activepercentagetime,PercentoftimeCGMdeviceisactive,70%oftimeactiveoutof14days
+Gl,ycemicmetrics,,
+,m Meanglucose,Meanofglucosevalues,*
+,Glucosemanagementindicator(GMI),CalculatedvalueapproximatingA1C(not,*
+,,alwaysequivalent),
+,A Glucosecoefficientofvariation(CV),Spreadofglucosevalues,≤36%†
+,TAR>250mg/dL(>13.9mmol/L),Percentoftimeinlevel2hyperglycemia,<5%(mostadults);<10%(olderadultswith
+,,,complex/intermediatehealth)
+,TAR>180mg/dL(>10mmol/L),Percentoftimeinlevel1hyperglycemia,<25%(mostadults);<50%(olderadultswith
+@,,,complex/intermediatehealth)‡
+,TIR70–180mg/dL(3.9–10.0mmol/L),Percentoftimeinrange,>70%(mostadults);>50%(olderadultswith
+,,,complex/intermediatehealth)
+,TBR<70mg/dL(<3.9mmol/L),Percentoftimeinlevel1hypoglycemia,<4%(mostadults);<1%(olderadultswith
+,,,complex/intermediatehealth)§
+,TBR<54mg/dL(<3.0mmol/L),Percentoftimeinlevel2hypoglycemia,<1%
+CG,"M,continuousglucosemonitoring;TAR,ti","meaboverange;TBR,timebelowrange;TIR,time",inrange.*Goalsforthesevaluesarenotstan-
+da,rdized. †Some studies suggest that lower,coefficient of variation targets (<33%) provide a,dditional protection against hypoglycemia for
+th,osereceivinginsulinorsulfonylureas.‡Goa,lsareforlevel1andlevel2hyperglycemiacombin,ed.§Goalsareforlevel1andlevel2hypogly-

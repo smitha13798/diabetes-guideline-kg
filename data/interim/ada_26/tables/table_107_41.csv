@@ -1,0 +1,61 @@
+Fastingriskelement,Riskscore
+1.Pregnancywithanytypeofdiabetes,
+(cid:129) Yes,6.5
+2.Diabetestype,
+(cid:129) Type1diabetesorLADA,1
+(cid:129) Type2diabetesoranyothertypeofdiabetes,0
+3.Durationofdiabetes(years),
+(cid:129) >20years,1
+(cid:129) 10–20years,0.5
+(cid:129) <10years,0
+4.Typeofdiabetestreatment(selectallthatarerelevant),
+(cid:129) Multipledailypremixedinsulininjections,2
+(cid:129) Once-dailypremixedinsulin,1.5
+(cid:129) Open-loopinsulinpump,1.5
+(cid:129) Automatedinsulindeliverysystem,1
+"(cid:129) Standardbasalinsulin(NPH,detemir,orglargine100)",1
+(cid:129) Ultra-long-actingbasalinsulin(glargine300ordegludec),0.75
+(cid:129) Short-actinginsulin,0.75
+(cid:129) Glibenclamideorglipizide,0.75
+"(cid:129) Modernsulfonylurea(gliclazide,gliclazideMR,glimepride)orrepeglanide",0.5
+(cid:129) ≥2glucose-loweringmedicationsexcludinginsulinorsulfonylurea,s 0.25
+(cid:129) Nutritionmodificationonlyormonotherapy(excludinginsulinorsulfonylurea),0
+5.Presenceofhypoglycemia,e
+t (cid:129) Impairedhypoglycemiaawareness,6.5
+(cid:129) Severe*hypoglycemiaduringlast4weeks,5
+e (cid:129) Hypoglycemiamorethanoncedaily,4
+(cid:129) 6–7episodesofhypoglycemia/week,3
+b (cid:129) 3–5episodesofhypoglycemia/week,2
+(cid:129) 1–2episodesofhypoglycemia/week,1
+a (cid:129) Hypoglycemia<1timeperweek,0.5
+(cid:129) Nohypoglycemiainlast4weeks,0
+i 6.LevelofA1C,
+D (cid:129) >9%(>75mmol/mol),1
+(cid:129) 7.5–9%(58–75mmol/mol),0.5
+n (cid:129) <7.5%(<58mmol/mol),0
+7.Glucosemonitoring,
+a (cid:129) Notdone,2
+(cid:129) Donesuboptimally,1
+c (cid:129) Doneasindicated,0
+(cid:129) AnytypeofCGM,−0.5
+i r 8.Hyperglycemicemergencies,
+(cid:129) DKAorHHSinthelastmonth,3.5
+e (cid:129) DKAorHHSinlast2–3months,2
+(cid:129) DKAorHHSinlast4–6months,1
+(cid:129) NoDKAorHHSinlast6months,0
+m 9.Macrovascular**complications,
+(cid:129) Unstablemacrovasculardisease,6.5
+A (cid:129) Stablemacrovasculardisease,2
+(cid:129) Nomacrovasculardisease,0
+10.Microvascularcomplications,
+@ a.Nephropathy,
+(cid:129) eGFR<30mL/min,6.5
+(cid:129) eGFR30–45mL/min,4
+(cid:129) eGFR45–60mL/min,2
+(cid:129) eGFR>60mL/min,0
+"b.Neuropathy,footcomplications,ordiabeticretinopathy",
+(cid:129) 3microvascularcomplications,3
+(cid:129) 2microvascularcomplications,2
+(cid:129) 1microvascularcomplication,1
+(cid:129) 0microvascularcomplications,0
+Continuedonp.S102,

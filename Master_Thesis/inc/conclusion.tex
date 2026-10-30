@@ -1,0 +1,88 @@
+\chapter{Conclusions and Future Work}
+\label{chap:conclusion}
+
+\section{Conclusion and Key Findings}
+This thesis addressed a practical problem: clinical practice guidelines
+from different organisations are distributed across heterogeneous documents
+and are not directly available in a common representation for
+cross-guideline querying and comparison. The approach taken was to construct
+a knowledge graph that represents content from multiple guidelines in a
+shared structure and then use that graph as a controlled source for
+question generation.
+
+The four-stage pipeline: ingestion, extraction, normalisation, and question
+generation, was designed to handle the structural and terminological
+variation that arises when documents from different publishing
+organisations are processed together. The ingestion stage classified
+document content into typed element records while preserving page-level
+provenance. The extraction architecture separates entity types between a
+rule-based layer and a contextual layer, with the full design supporting
+LLM-based extraction for categories that require contextual interpretation.
+The normalisation stage resolved duplicate entities, converted measurement
+units to a common representation, and created equivalence edges between
+matching targets from different organisations. The question-generation
+stage selected graph edges as anchors, provided each anchor to the language
+model as factual context, and checked the generated question for consistency
+with that anchor before acceptance.
+
+The pipeline was instantiated on eight documents from four organisations
+covering Type~1 and Type~2 diabetes. The resulting knowledge graph contains
+2,503 nodes across 13 node types and 3,485 edges across 18 relation types.
+Normalisation created eight \textsc{equivalent\_to} edges linking matching
+diagnostic thresholds across ADA, IDF, and Diabetes Canada after unit
+conversion. These relations are not directly stated in any individual
+source document; they arise from comparing independently stated targets
+after normalisation.
+
+The full GPT-4o-mini question-generation run produced 1,289 questions, of which 1,280 passed the rule-based validation checks and 9 were flagged by the rule-based validator because they contained numerical values absent from their anchors. A separate 491-question
+catalogue was used for the detailed quality evaluation. From this catalogue, 30 questions were reviewed by two medical doctors:
+26 were accepted without qualification, three contained clear
+extraction-derived errors, and one was flagged for a clinical-scope
+concern rather than a factual error.
+
+In the reviewed sample, all three clear failures were traced to incorrect
+graph relations rather than to the question-formulation step. This points to graph quality, particularly the correctness of extracted relations, as an important target for further improvement.
+
+\section{Future Work}
+
+Several directions follow from the work reported here.
+
+The ingestion pipeline evaluated Docling as an alternative to PyMuPDF but did
+not adopt it, primarily because of its runtime cost on the CPU-only development
+hardware (Section~\ref{sec:exp_parsing}). A spot check on a small sample showed
+Docling produced no ligature artefacts, unlike the PyMuPDF output, though the
+comparison of word-spacing errors between the two was inconclusive. With GPU
+acceleration available, re-evaluating Docling as the primary parser,
+particularly for its ligature handling, would be a reasonable next step, and
+could reduce or replace the family-specific text repairs currently required for
+some document sources.
+
+The LLM-based contextual extraction path was executed for the four entity categories of drugs, clinical conditions, populations, and interventions. However, extraction quality was not independently evaluated against a manually annotated gold-standard dataset, and the LLM-based extraction was not compared with the heuristic fallback mode of the same script.
+
+Entity deduplication in this work is deterministic and relies on a fixed
+synonym dictionary. Surface forms not represented in the dictionary remain
+as separate nodes, which can increase the number of near-duplicate Drug and
+ClinicalCondition nodes. Embedding-based or fuzzy matching could improve
+recall in entity resolution, although safeguards would be needed to avoid
+incorrectly merging distinct entities.
+
+The current \textsc{equivalent\_to} criterion is implemented for normalised
+plasma-glucose targets. Although alternate HbA1c representations are stored
+during extraction, the equivalence procedure does not currently compare
+HbA1c targets across organisations. Extending the criterion to HbA1c would
+enable additional cross-guideline comparisons, including comparisons
+involving NICE targets represented in the corpus.
+
+The validator checks consistency between a generated question and its graph
+anchor, but it does not determine whether the underlying graph relation is
+clinically correct. A more complete evaluation would include a larger
+reviewed sample, reviewers with a broader range of relevant clinical
+expertise, and an analysis of whether the graph errors observed in the
+current review are systematic or isolated.
+
+Finally, the four-stage architecture is not tied to diabetes, but the
+schema, extraction rules, canonical entities, repair procedures, and
+normalisation configuration used here were developed for the diabetes
+corpus. Applying the architecture to another multi-guideline domain would
+test which components transfer with limited adaptation and which require
+domain-specific redesign.

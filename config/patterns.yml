@@ -1,0 +1,153 @@
+version: 3.0.0
+
+# Notes:
+# - All regexes are Python-compatible (named groups via (?P<name>...)).
+# - Dashes: we allow -, – (en), — (em), and - (non-breaking): [-–—-]
+# - Units: accept variants like "mmol/L", "mmol / L", "mg/dL", "mg / dL"
+# - Use these groups downstream to map into the property-model schema:
+#     range:  (?P<min>, ?P<max>, ?P<unit>)
+#     cmp:    (?P<op>, ?P<val>, ?P<unit>) or percent with unit "%"
+# - Keep patterns conservative to avoid false positives.
+
+docling:
+  # Optional hints if you use Docling’s block taxonomy during parsing
+  block_types:
+    - heading
+    - paragraph
+    - table
+    - figure
+    - caption
+  caption_prefixes:
+    - '(?i)^table\\s*\\d+\\b'
+    - '(?i)^figure\\s*\\d+\\b'
+
+tables:
+  caption_markers:
+    - '(?i)^table\\s*\\d+\\b'
+    - '(?i)^figure\\s*\\d+\\b'
+  care_level_headers:
+    - '(?i)\\boptimal\\s+care\\b'
+    - '(?i)\\bbasic\\s+care\\b'
+
+numbers_units:
+  # RANGES (e.g., "6.1–6.9 mmol/L")
+  range_mmol: '(?P<min>\\d+(?:[\\.,]\\d+)?)\\s*[-–—-]\\s*(?P<max>\\d+(?:[\\.,]\\d+)?)\\s*(?P<unit>mmol\\s*/?\\s*L)'
+  range_mgdl: '(?P<min>\\d+(?:[\\.,]\\d+)?)\\s*[-–—-]\\s*(?P<max>\\d+(?:[\\.,]\\d+)?)\\s*(?P<unit>mg\\s*/?\\s*dL)'
+
+  # COMPARATOR + VALUE with units (e.g., "≥ 7.0 mmol/L", "< 140 mg/dL")
+  cmp_value_mmol: '(?P<op>≤|>=|≥|<|>)\\s*(?P<val>\\d+(?:[\\.,]\\d+)?)\\s*(?P<unit>mmol\\s*/?\\s*L)'
+  cmp_value_mgdl: '(?P<op>≤|>=|≥|<|>)\\s*(?P<val>\\d+(?:[\\.,]\\d+)?)\\s*(?P<unit>mg\\s*/?\\s*dL)'
+
+  # Percent comparator (e.g., "≤ 7.0 %", "≥6.5%")
+  cmp_value_percent: '(?P<op>≤|>=|≥|<|>)\\s*(?P<val>\\d+(?:[\\.,]\\d+)?)\\s*%'
+
+sections:
+  recommendation_block: '(?i)^recommendations?$'
+  chapter: '(?i)^chapter\\s+\\d+\\b'
+  section_anchor: '(?i)^(introduction|screening|diagnosis|glycaemic\\s*targets|non\\-?insulin|insulin|cardio\\-?renal|prevention|programmes?)\\b'
+
+diagnostics:
+  # Diabetes diagnosis (WHO/ADA established)
+  - id: DIAB_FPG
+    authority: WHO/ADA
+    criterion_name: "Diabetes"
+    test: "FPG"
+    pattern: '(?i)fasting\\s+plasma\\s+glucose.*?(?P<op>≥|>=)\\s*(?P<val>7(?:[\\.,]0)?)\\s*mmol\\s*/?\\s*L|(?P<val_mg>126)\\s*mg\\s*/?\\s*dL'
+    props: { status: established, units: "mmol/L", comparator_min: "≥" }
+
+  - id: DIAB_2H_OGTT
+    authority: WHO/ADA
+    criterion_name: "Diabetes"
+    test: "2h OGTT"
+    pattern: '(?i)(?:2\\s*h(?:our)?|two\\s*hour).*?(?P<op>≥|>=)\\s*(?P<val>11(?:[\\.,]1)?)\\s*mmol\\s*/?\\s*L|(?P<val_mg>200)\\s*mg\\s*/?\\s*dL'
+    props: { status: established, units: "mmol/L", comparator_min: "≥" }
+
+  - id: DIAB_HBA1C
+    authority: WHO/ADA
+    criterion_name: "Diabetes"
+    test: "HbA1c"
+    pattern: '(?i)hba1c\\s*.*?(?P<op>≥|>=)\\s*(?P<val>6(?:[\\.,]5)?)\\s*%'
+    props: { status: established, units: "%", comparator_min: "≥" }
+
+  # Intermediate hyperglycaemia (prediabetes) ranges
+  - id: IH_IFG_WHO
+    authority: WHO
+    criterion_name: "IFG"
+    test: "FPG"
+    pattern: '(?i)fasting\\s+plasma\\s+glucose\\s*(?P<min>6(?:[\\.,]1)?)\\s*[-–—-]\\s*(?P<max>6(?:[\\.,]9)?)\\s*mmol\\s*/?\\s*L'
+    props: { status: established, units: "mmol/L" }
+
+  - id: IH_IFG_ADA
+    authority: ADA
+    criterion_name: "IFG"
+    test: "FPG"
+    pattern: '(?i)fasting\\s+plasma\\s+glucose\\s*(?P<min>5(?:[\\.,]6)?)\\s*[-–—-]\\s*(?P<max>6(?:[\\.,]9)?)\\s*mmol\\s*/?\\s*L'
+    props: { status: established, units: "mmol/L" }
+
+  - id: IH_IGT
+    authority: WHO/ADA
+    criterion_name: "IGT"
+    test: "2h OGTT"
+    pattern: '(?i)(?:2\\s*h(?:our)?).*?(?P<min>7(?:[\\.,]8)?)\\s*[-–—-]\\s*(?P<max>11(?:[\\.,]0)?)\\s*mmol\\s*/?\\s*L'
+    props: { status: established, units: "mmol/L" }
+
+  - id: IH_HBA1C_ADA
+    authority: ADA
+    criterion_name: "Prediabetes (HbA1c)"
+    test: "HbA1c"
+    pattern: '(?i)hba1c\\s*(?P<min>5(?:[\\.,]7)?)\\s*%\\s*[-–—-]\\s*(?P<max>6(?:[\\.,]4)?)\\s*%'
+    props: { status: established, units: "%" }
+
+  # 1-hour OGTT (IDF position – proposed)
+  - id: ONE_HOUR_PREDICTOR
+    authority: IDF
+    criterion_name: "1h PG predictor"
+    test: "1h OGTT"
+    pattern: '(?i)1\\s*h(?:our)?\\s*(?:plasma\\s+)?glucose.*?(?P<op>≥|>=)\\s*(?P<val>8(?:[\\.,]6)?)\\s*mmol\\s*/?\\s*L|(?P<val_mg>155)\\s*mg\\s*/?\\s*dL'
+    props: { status: proposed, units: "mmol/L", comparator_min: "≥" }
+
+  - id: ONE_HOUR_DIABETES
+    authority: IDF
+    criterion_name: "1h PG diabetes (proposed)"
+    test: "1h OGTT"
+    pattern: '(?i)1\\s*h(?:our)?\\s*(?:plasma\\s+)?glucose.*?(?P<op>≥|>=)\\s*(?P<val>11(?:[\\.,]6)?)\\s*mmol\\s*/?\\s*L|(?P<val_mg>210)\\s*mg\\s*/?\\s*dL'
+    props: { status: proposed, units: "mmol/L", comparator_min: "≥" }
+
+screening:
+  risk_score_to_test:
+    - '(?i)(FINDRISC|ADA\\s*risk\\s*test|AUSDRISK).*?(?=then\\b|followed\\s*by\\b|and\\b)'
+
+interventions:
+  lifestyle:
+    - '(?i)structured\\s+lifestyle|intensive\\s+lifestyle|diet\\s+and\\s+(exercise|activity)'
+  metformin:
+    - '(?i)\\bmetformin\\b'
+  acarbose:
+    - '(?i)\\bacarbose\\b'
+  tzd:
+    - '(?i)thiazolidinedione|pioglitazone|rosiglitazone'
+  glp1ra:
+    - '(?i)glp-?1\\s*(receptor\\s*agonist|ra)|semaglutide|liraglutide|dulaglutide|exenatide|tirzepatide'
+  sglt2i:
+    - '(?i)sglt-?2|empagliflozin|dapagliflozin|canagliflozin|ertugliflozin'
+
+populations:
+  - '(?i)impaired\\s+glucose\\s+tolerance|\\bIGT\\b'
+  - '(?i)is(?:o|\\s)lated\\s+impaired\\s+fasting\\s+glucose|\\bIFG\\b(?!.*IGT)'
+  - '(?i)high\\s*risk|risk\\s*score'
+  - '(?i)obese|overweight'
+  - '(?i)elder(?:ly)?|older\\s+adult'
+
+outcomes:
+  - '(?i)prevents|delays\\s+(?:type\\s*2\\s*)?diabetes'
+  - '(?i)reduces|lowers\\s+hba1c'
+  - '(?i)heart\\s*failure|\\bHF\\b'
+  - '(?i)ckd|kidney'
+  - '(?i)mace|major\\s*adverse'
+  - '(?i)cv\\s*death|cardiovascular\\s*death'
+  - '(?i)hospitali[sz]ation'
+
+headings:
+  recommendation_block: '(?i)^recommendations?$'
+  chapter: '(?i)^chapter\\s+\\d+\\b'
+  section: '(?i)^(introduction|screening|diagnosis|glycaemic\\s*targets|non\\-?insulin|insulin|cardio\\-?renal|prevention|programmes?)\\b'

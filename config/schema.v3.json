@@ -1,0 +1,257 @@
+{
+  "meta": {
+    "name": "IDF Type 2 Diabetes KG",
+    "version": "3.0.0",
+    "description": "Property-model schema for IDF guidelines KG (Docling-ready). Explicit node/edge properties with types and validation.",
+    "parser": "docling"
+  },
+  "entities": {
+    "DocumentSection": {
+      "key": ["id"],
+      "required": ["id", "title"],
+      "properties": {
+        "id": "string",
+        "title": "string",
+        "chapter_no": "string?",
+        "page_start": "int?",
+        "page_end": "int?",
+        "aliases": "list[string]?",
+        "bbox": "list[float]?"
+      }
+    },
+    "Recommendation": {
+      "key": ["id"],
+      "required": ["id", "text"],
+      "properties": {
+        "id": "string",
+        "text": "string",
+        "situation": "string?",
+        "care_level": "enum?care_level",
+        "strength": "string?",
+        "notes": "string?",
+        "source_page": "int?",
+        "source_quote": "string?",
+        "table_ref": "string?",
+        "confidence": "float?",
+        "extract_method": "string?"
+      }
+    },
+    "Population": {
+      "key": ["id"],
+      "required": ["id", "name"],
+      "properties": {
+        "id": "string",
+        "name": "string",
+        "criteria": "string?",
+        "age_range": "string?",
+        "comorbidities": "list[string]?",
+        "risk_profile": "string?",
+        "aliases": "list[string]?"
+      }
+    },
+    "Condition": {
+      "key": ["name"],
+      "required": ["name"],
+      "properties": {
+        "name": "string",
+        "aliases": "list[string]?",
+        "coding": "map[string,string]?"
+      }
+    },
+    "Test": {
+      "key": ["name"],
+      "required": ["name"],
+      "properties": {
+        "name": "string",
+        "aliases": "list[string]?",
+        "units": "list[string]?",
+        "loinc": "string?"
+      }
+    },
+    "Intervention": {
+      "key": ["name", "class?"],
+      "required": ["name"],
+      "properties": {
+        "name": "string",
+        "class": "string?",
+        "type": "string?",
+        "notes": "string?",
+        "aliases": "list[string]?"
+      }
+    },
+    "GlycaemicTarget": {
+      "key": ["metric", "units", "lb?", "ub?", "op?", "value?"],
+      "required": ["metric", "units"],
+      "properties": {
+        "metric": "string",
+        "units": "enum units",
+        "lb": "float?",
+        "ub": "float?",
+        "op": "enum?comparator",
+        "value": "float?",
+        "preferred": "bool?",
+        "acceptable": "bool?",
+        "personalization_rules": "string?",
+        "source_page": "int?",
+        "source_quote": "string?",
+        "confidence": "float?",
+        "extract_method": "string?"
+      },
+      "rules": [
+        "(has(lb) and has(ub)) xor (has(op) and has(value))"
+      ]
+    },
+    "DiagnosticCriterion": {
+      "key": ["authority", "name", "units", "cutpoint_min?", "cutpoint_max?"],
+      "required": ["authority", "name"],
+      "properties": {
+        "authority": "enum authority",
+        "name": "string",
+        "status": "enum?status",
+        "test_ref": "string?",
+        "units": "enum?units",
+        "cutpoint_min": "float?",
+        "cutpoint_max": "float?",
+        "comparator_min": "enum?comparator",
+        "comparator_max": "enum?comparator",
+        "notes": "string?",
+        "source_page": "int?",
+        "source_quote": "string?",
+        "confidence": "float?",
+        "extract_method": "string?"
+      },
+      "rules": [
+        "has(cutpoint_min) or has(cutpoint_max)",
+        "if has(cutpoint_min) then has(comparator_min)",
+        "if has(cutpoint_max) then has(comparator_max)",
+        "if has(cutpoint_min) or has(cutpoint_max) then has(units)"
+      ]
+    },
+    "Outcome": {
+      "key": ["name"],
+      "required": ["name"],
+      "properties": {
+        "name": "string",
+        "definition": "string?",
+        "aliases": "list[string]?"
+      }
+    },
+    "CareLevel": {
+      "key": ["id"],
+      "required": ["id", "name"],
+      "properties": {
+        "id": "string",
+        "name": "string",
+        "definition": "string?"
+      }
+    },
+    "EvidenceItem": {
+      "key": ["id"],
+      "required": ["id", "type"],
+      "properties": {
+        "id": "string",
+        "type": "enum evidence_type",
+        "bibliography": "string?",
+        "caption": "string?",
+        "page": "int?",
+        "file_path": "string?",
+        "bbox": "list[float]?",
+        "follow_up": "string?",
+        "effect_size": "string?"
+      }
+    },
+    "Program": {
+      "key": ["name"],
+      "required": ["name"],
+      "properties": {
+        "name": "string",
+        "aliases": "list[string]?",
+        "country": "string?",
+        "duration": "string?",
+        "notes": "string?"
+      }
+    },
+    "RiskScore": {
+      "key": ["name"],
+      "required": ["name"],
+      "properties": {
+        "name": "string",
+        "aliases": "list[string]?",
+        "inputs": "list[string]?"
+      }
+    },
+    "Figure": {
+      "key": ["id"],
+      "required": ["id"],
+      "properties": {
+        "id": "string",
+        "img_id": "string?",
+        "caption": "string?",
+        "page": "int?",
+        "bbox": "list[float]?",
+        "file_path": "string?"
+      }
+    },
+    "FlowNode": {
+      "key": ["id"],
+      "required": ["id", "text"],
+      "properties": {
+        "id": "string",
+        "text": "string",
+        "figure_id": "string?",
+        "order": "int?",
+        "page": "int?"
+      }
+    }
+  },
+  "relationships": {
+    "IN_SECTION":        { "from": "Recommendation", "to": "DocumentSection", "properties": { "source_page": "int?", "source_quote": "string?", "confidence": "float?" } },
+    "APPLIES_TO":        { "from": "Recommendation", "to": "Population",      "properties": { "source_page": "int?", "source_quote": "string?", "confidence": "float?" } },
+    "ABOUT_CONDITION":   { "from": "Recommendation", "to": "Condition",       "properties": { "source_page": "int?", "source_quote": "string?", "confidence": "float?" } },
+    "RECOMMENDS_INTERVENTION": { "from": "Recommendation", "to": "Intervention", "properties": { "source_page": "int?", "source_quote": "string?", "confidence": "float?" } },
+    "TARGETS":           { "from": "Recommendation", "to": "GlycaemicTarget", "properties": { "source_page": "int?", "source_quote": "string?", "confidence": "float?" } },
+    "HAS_CARE_LEVEL":    { "from": "Recommendation", "to": "CareLevel",       "properties": { "source_page": "int?", "source_quote": "string?", "confidence": "float?" } },
+    "SUPPORTED_BY":      { "from": "Recommendation", "to": "EvidenceItem",    "properties": { "source_page": "int?", "source_quote": "string?", "confidence": "float?" } },
+
+    "HAS_TEST":          { "from": "DiagnosticCriterion", "to": "Test",       "properties": { "op": "enum?comparator", "value": "float?", "lb": "float?", "ub": "float?", "unit": "enum?units", "authority": "enum?authority" } },
+    "TEST_DEFINES_STAGE":{ "from": "DiagnosticCriterion", "to": "Condition",  "properties": { "authority": "enum?authority" } },
+    "DIAGNOSED_BY":      { "from": "Condition", "to": "DiagnosticCriterion",  "properties": { "source_page": "int?", "source_quote": "string?", "confidence": "float?" } },
+
+    "IMPROVES":          { "from": "Intervention", "to": "Outcome",           "properties": { "source_page": "int?", "source_quote": "string?", "confidence": "float?", "population": "string?" } },
+    "PREVENTS":          { "from": "Intervention", "to": "Outcome",           "properties": { "source_page": "int?", "source_quote": "string?", "confidence": "float?", "population": "string?" } },
+    "NO_EFFECT_IN":      { "from": "Intervention", "to": "Population",        "properties": { "source_page": "int?", "source_quote": "string?", "confidence": "float?", "note": "string?" } },
+
+    "SCREENING_OPTION":  { "from": "CareLevel", "to": "Test",                 "properties": { "note": "string?" } },
+    "SCREENING_FLOW":    { "from": "RiskScore", "to": "Test",                 "properties": { "note": "string?" } },
+    "RECOMMENDS_PROGRAM":{ "from": "CareLevel", "to": "Program",              "properties": { "note": "string?" } },
+
+    "HAS_TARGET":        { "from": "Condition", "to": "GlycaemicTarget",      "properties": { "source": "string?", "page_id": "int?", "confidence": "float?" } },
+    "APPLIES_TO_TEST":   { "from": "GlycaemicTarget", "to": "Test",           "properties": {} },
+    "HAS_PROTOCOL":      { "from": "Test", "to": "MonitoringProtocol",        "properties": {} },
+    "FLOWS_TO":          { "from": "FlowNode", "to": "FlowNode",              "properties": { "label": "string?" } }
+  },
+  "validation": {
+    "enums": {
+      "care_level": ["optimal", "basic", "both"],
+      "authority": ["WHO", "ADA", "IDF", "Emerging"],
+      "status": ["established", "proposed"],
+      "comparator": ["<","≤","=","≥",">","≈"],
+      "evidence_type": ["RCT","Meta-analysis","Guideline","Cohort","Consensus"]
+    },
+    "units": ["%","mmol/L","mg/dL"],
+    "allowed_labels": [
+      "DocumentSection","Recommendation","Population","Condition","Test","Intervention","GlycaemicTarget",
+      "DiagnosticCriterion","Outcome","CareLevel","EvidenceItem","Program","RiskScore","Figure","FlowNode","MonitoringProtocol"
+    ],
+    "allowed_relationships": [
+      "IN_SECTION","APPLIES_TO","ABOUT_CONDITION","RECOMMENDS_INTERVENTION","TARGETS","HAS_CARE_LEVEL","SUPPORTED_BY",
+      "HAS_TEST","TEST_DEFINES_STAGE","DIAGNOSED_BY","IMPROVES","PREVENTS","NO_EFFECT_IN",
+      "SCREENING_OPTION","SCREENING_FLOW","RECOMMENDS_PROGRAM",
+      "HAS_TARGET","APPLIES_TO_TEST","HAS_PROTOCOL","FLOWS_TO"
+    ],
+    "constraints": {
+      "no_overlapping_ranges_per_authority": true,
+      "require_units_for_numeric_cutpoints": true
+    }
+  }
+}

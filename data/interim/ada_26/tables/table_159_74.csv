@@ -1,0 +1,4 @@
+m Setting FDA* ISO15197:2013*,,,,,
+@ Hospitaluse,A,95%within12%forBG≥75mg/dL 95%within12mg/dLforBG<75mg/dL 98%within15%forBG≥75mg/dL 98%within15mg/dLforBG<75mg/dL,,,95%within15%forBG≥100mg/dL 95%within15mg/dLforBG<100mg/dL 99%inAorBregionofconsensuserrorgrid‡
+Homeuse,,95%within15%forallBGintheusableBGrange† 99%within20%forallBGintheusableBGrange†,,,
+"BG,bloodglucose;FDA,U.S.FoodandDrugAdministration;ISO,InternationalOrganizationforStandardization.Toconvertmg/dLtommol/L, seeendmemo.com/medical/unitconvert/Glucose.php.*DatashownintheFDAcolumnarefromtheFDA(191).DatashownintheISOcolumn arefromtheFDA(192). †Therangeofblood glucosevaluesfor whichthemeterhasbeenprovenaccurateandwill providereadings(other thanlow,high,orerror).‡Valuesoutsideofthe“clinicallyacceptable”AandBregionsareconsidered“outlier”readingsandmaybedanger- oustousefortherapeuticdecisions(193).",,,,,

@@ -1,0 +1,11 @@
+Gene,Inheritance,Clinical features
+HNF1A,AD,n HNF1A-MODY: progressive insulin secretory defect with presentation in adolescence or early adulthood; lowered renal threshold for glucosuria; large rise in 2-h PG level on OGTT (>90 mg/dL [>5 mmol/L]); low hs-CRP; sensitive to sulfonylureas
+GCK,AD,"o i GCK-MODY: higher glucose threshold (set point) for gtlucose-stimulated insulin secretion, causing stable, nonprogressaive elevated fasting blood glucose; typically does not require treatment in nonpregnant individuals; microvascular complications are rare; small rise in 2-h PG level on OGTT (<54 mg/dL [<3 mmol/L])"
+HNF4A,AD,i c HNF4A-MODY: progressive insulin secretory defect with presentation in adolescence or early adulthoodo; may have large birth weight (macrosomia) and transient neonatal hypoglycemia; sensitive to sulfonylureas
+HNF1B,AD,s HNF1B-MODY: developmental renal disease (typically cystic); genitourinary abnormalities; atrophy of the pancreas; hyperuricemia; gout
+-,-,s -
+KCNJ11,AD,A IUGR; possible developmental delay and seizures; responsive to sulfonylureas
+ABCC8,AD,IUGR; rarely developmental delay; responsive to sulfonylureas
+INS,AD,s IUGR; insulin requiring
+FOXP3,X-linked,"e Immunodysregulation, polyendocrinopathy, enteropathy X-linked (IPEX) t syndrome: autoimmune diabetes, autoimmune thyroid disease, exfoliative dermatitis; insulin requiring"
+"6q24 (PLAGL1, HYMA1)",AD for paternal duplications,e IUGR; macroglossia; umbilical hernia; may be treatable with medications other than insulin

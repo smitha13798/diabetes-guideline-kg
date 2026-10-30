@@ -1,0 +1,3 @@
+{"id": "edge_16e37583fab9bdaa", "src": "sec_a8060b675a7b3cd6", "dst_type": "concept", "dst": "screening", "relation": "about"}
+{"id": "edge_2b327da6fc32b6c7", "src": "sec_4caa3283cc6fc245", "dst_type": "concept", "dst": "glycemic_target", "relation": "about"}
+{"id": "edge_03e5d9c7e00cbeb4", "src": "sec_b64af11bee215be4", "dst_type": "concept", "dst": "glycemic_target", "relation": "about"}

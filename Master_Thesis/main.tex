@@ -1,0 +1,244 @@
+\documentclass[headsepline,footsepline,12pt]{scrreprt}
+
+\usepackage[
+    breaklinks,
+    colorlinks=true,
+    citecolor=blue,
+    linkcolor=blue,
+    urlcolor=blue,
+    filecolor=blue
+]{hyperref}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx,color}
+\usepackage{url}
+\setlength{\parskip}{6pt}
+\setlength{\parindent}{0pt}
+\usepackage[utf8]{inputenc}
+\usepackage{verbatim}
+\usepackage{longtable}
+\usepackage{tabularx}  % For tables longer than one page
+\usepackage{multicol}
+\usepackage{latexsym}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\usepackage{natbib}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+
+%\usepackage[ngerman]{babel} % Wenn die Arbeit auf Deutsch verfasst wird
+\usepackage{blindtext}
+\usepackage[automark]{scrlayer-scrpage}
+% \pagestyle{scrheadings}
+% Kopf- und Fußzeile
+\clearpairofpagestyles 
+\chead{\headmark} % automatischen Kapitelnamen rein
+\ofoot[\pagemark]{\pagemark} % oben rechts Seitenzahl laut Richtlinie
+
+\pagestyle{scrheadings}
+\usepackage{listings}
+\usepackage{xcolor}
+
+\widowpenalty=10000
+\clubpenalty=10000
+\displaywidowpenalty=10000
+\definecolor{jsonbg}{RGB}{248,248,248}
+\definecolor{jsonkey}{RGB}{0,0,200}
+\definecolor{jsonstring}{RGB}{0,128,0}
+
+\lstdefinelanguage{json}{
+    basicstyle=\small\ttfamily,
+    breaklines=true,
+    backgroundcolor=\color{jsonbg},
+    stringstyle=\color{jsonstring},
+    keywordstyle=\color{jsonkey},
+    showstringspaces=false,
+    frame=single,
+    framesep=4pt,
+    captionpos=b
+}
+
+\lstdefinestyle{jsonstyle}{
+    language=json,
+    basicstyle=\small\ttfamily,
+    breaklines=true,
+    breakatwhitespace=false,
+    backgroundcolor=\color{jsonbg},
+    stringstyle=\color{jsonstring},
+    keywordstyle=\color{jsonkey},
+    showstringspaces=false,
+    frame=single,
+    framesep=4pt,
+    captionpos=b
+}
+
+\setlength{\topmargin}{1.5cm}
+\setlength{\headheight}{12pt}
+\setlength{\headsep}{20pt}
+\setlength{\topskip}{12pt}
+\setlength{\evensidemargin}{0pt}
+\setlength{\oddsidemargin}{0pt}
+\setlength{\textheight}{240mm}
+\setlength{\textwidth}{160mm}
+\setlength{\voffset}{-2cm}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\input{inc/title}
+\pagenumbering{roman}
+
+\newpage
+\thispagestyle{empty}
+
+% Here comes the declaration of independence, which needs to be alectronically signed when submitting the PDF to the exam office (with advsior in cc)
+
+\vspace*{100pt}
+%%%%%%%%%% ENGLISH VRSION %%%%%%%%%%%%%%%
+\centerline{\large{\textbf{ Declaration of Independent Work}}}
+
+\bigskip
+
+\noindent
+    \begin{tabular}{lc}
+        \textbf{CHANDRAKUMAR, Sushmitha:} &  \\
+        \textbf{Student ID No.:4732591}  & 
+    \end{tabular}
+
+\medskip
+I hereby declare that I independently prepared the Master's thesis submitted by me on 12/10/2026 as a PDF file (readable and searchable using standard PDF reader software), entitled
+
+\medskip
+From Guidelines to Questions: Knowledge Graph Construction and Question Generation from Clinical Practice Guidelines
+\medskip
+
+supervised by Prof. Dr. Michael Gertz, without any unauthorized assistance from third parties. I have used no sources or aids other than those specified and have clearly identified all passages taken verbatim or in substance from published or unpublished works, including those from digital or AI-based sources.
+
+I confirm that any use of AI tools was discussed in advance with the supervisor of the
+thesis and that the agreed-upon rules were observed, as detailed in the accompanying
+Declaration on the Use of Artificial Intelligence.
+
+I assume full responsibility for the scientific quality and content of this thesis, the methodology chosen and the process used to prepare it, as well as for the literature cited.
+
+I agree that my thesis may be checked as part of university procedures for plagiarism as well as for the potential misuse of automated text and code generation.
+
+\bigskip \bigskip
+\bigskip
+    \begin{tabular}{cc}
+        \underline{\phantom{mmmmmmmmmmmmmmmmmmmm}} \qquad \qquad& \underline{\phantom{mmmmmmmmmmmmmmmmmmmmmmm}}\\
+        Place, Date  & Signature
+    \end{tabular}
+
+%%%%%%%%%%%% German Version
+
+\begin{comment}
+\centerline{\large{\textbf{ Eigenständigkeitserklärung}}}
+
+\bigskip
+
+\noindent
+    \begin{tabular}{lc}
+        \textbf{NACHNAME, Vorname:} &  \\
+        \textbf{Matr.-Nr.:}  & 
+    \end{tabular}
+
+\medskip
+Hiermit versichere ich, dass ich die von mir am [DATUM] als PDF-Datei (mit Standard-PDF-Lesesoftware lesbar und durchsuchbar) eingereichte Bachelor-Arbeit mit dem Titel
+
+\medskip
+[TITEL]
+\medskip
+
+betreut von Prof. Dr. Michael Gertz selbstständig und ohne unzulässige fremde Hilfe verfasst habe. Ich habe keine anderen als
+die angegebenen Quellen und Hilfsmittel verwendet und sämtliche Stellen, die wörtlich oder
+sinngemäß aus veröffentlichten oder unveröffentlichten Werken – einschließlich solcher aus
+digitalen oder KI-basierten Quellen – übernommen wurden, als solche kenntlich gemacht.
+
+Ich bestätige, dass die etwaige Nutzung von KI-Tools vorab mit dem Betreuer der Abschlussarbeit abgesprochen wurde und dass die besprochenen Regelungen eingehalten wurden.
+
+Ich übernehme die volle Verantwortung für die wissenschaftliche Qualität und den Inhalt der
+vorliegenden Arbeit, die gewählte Methodik und den Erstellungsprozess, sowie die zitierte
+Literatur.
+
+Ich bin damit einverstanden, dass meine Arbeit im Rahmen universitärer Verfahren auf Plagiate
+sowie auf den möglichen Missbrauch automatisierter Text- und Codegenerierung überprüft wird.
+
+\bigskip \bigskip
+\bigskip
+    \begin{tabular}{cc}
+        \underline{\phantom{mmmmmmmmmmmmmmmmmmmm}} \qquad \qquad& \underline{\phantom{mmmmmmmmmmmmmmmmmmmmmmm}}\\
+        Ort, Datum  & Unterschrift
+    \end{tabular}
+
+\end{comment}
+
+% \noindent
+% I hereby certify that I have written this work myself and have not used any sources or aids other than those indicated, and that any material taken verbatim or in substance from other works has been clearly identified as such. Furthermore, I certify that the submitted electronic version is identical in content and wording to the printed version of my work. I agree that this electronic version may be checked for plagiarism internally by the university using plagiarism detection software.
+
+% \vspace*{50pt}
+% \noindent
+% Date, Signature: \underline{\phantom{mmmmmmmmmmmmmmmmmmmmmmmmmmm}}
+
+
+
+\newpage
+\input{inc/ai_declaration}
+\newpage
+
+% Add a brief summary of your topic and contributions (Zusammenfassung) in German *and* in English:
+\chapter*{Zusammenfassung}
+\input{inc/zusammenfassung}
+\newpage
+
+\chapter*{Abstract}
+\input{inc/abstract}
+\newpage
+
+\tableofcontents
+\newpage
+\listoffigures
+\newpage
+\listoftables
+\newpage
+
+
+
+\chapter*{List of Acronyms}
+\addcontentsline{toc}{chapter}{List of Acronyms}
+\input{inc/abbreviations}
+\newpage
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Here's where the individual chapters are included
+\pagenumbering{arabic}
+\input{inc/intro}
+
+\input{inc/background}
+
+\input{inc/model}
+
+ \input{inc/eval}
+
+\input{inc/conclusion}
+
+% Bibliography
+\newpage
+
+\bibliographystyle{apalike}
+\bibliography{references}
+\nocite{*}
+
+\appendix
+\input{inc/appendix}
+\newpage
+
+\end{document}
+

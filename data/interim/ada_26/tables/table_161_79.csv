@@ -1,0 +1,11 @@
+Typeofdevice Brand* Availability Alarms,,,,,
+rtCGM,,Libre2PlusandLibre3Plus,,Prescription,Yes
+,,DexcomG6andG7,,Prescription,Yes
+,,Eversense365,,Prescription,Yes
+,,Guardian4,,Prescription,Yes
+,,Simplera,,Prescription,Yes
+OTC-CGM,,DexcomStelo,,OTC,No
+,,AbbottLingo,,OTC,No
+ProfessionalCGM,,AbbottFreeStyleLibrePro,,Inoffice,No
+,,DexcomG6Pro,,Inoffice,No
+"CGM, continuous glucose monitoring; isCGM, intermittently scanned CGM; OTC, over the counter;rtCGM,real-timeCGM.*Genericnamesnotavailable.",,,,,

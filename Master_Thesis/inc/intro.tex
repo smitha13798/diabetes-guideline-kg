@@ -1,0 +1,128 @@
+\chapter{Introduction}
+\label{chap:introduction}
+
+\section{Motivation}
+\label{sec:motivation}
+
+Clinical practice guidelines are documents that provide evidence-based
+recommendations for healthcare professionals. They may describe how to
+diagnose a condition, which treatments to use, what targets to aim for, and
+how patients should be monitored. These guidelines are published by professional and national organisations , which often use different document structures, terminology, and measurement units.
+
+This variation makes it difficult to compare guidelines automatically. For
+example, one organisation may report a fasting plasma glucose threshold in
+mg/dL, while another reports the same type of measurement in mmol/L. A
+simple text search can find the numbers, but it cannot determine whether
+they describe the same clinical concept, convert the units, or preserve
+which organisation reported each value.
+
+Building a system that compares guidelines automatically is harder than it
+might first appear, because existing tools for extracting structured
+information from documents are usually built around one source at a time. A
+parser or extraction rule written for one organisation's documents often
+does not work on another organisation's documents, because the two use
+different layouts, different wording, and different ways of presenting the
+same kind of information. A system that is only ever tested on documents
+from a single publisher may work well on those documents while failing on
+anything else.
+
+This thesis addresses the problem by representing guideline information in
+a knowledge graph. A knowledge graph is a structured network in which
+important items, such as organisations, treatments, conditions, and
+numerical targets, are represented as nodes. Relationships between these
+items are represented as edges. This structure allows information from
+different guidelines to be compared and queried systematically.
+
+As a concrete example, consider a clinician or medical educator who wants
+to know whether the American Diabetes Association (ADA)\footnote{https://www.diabetes.org/}, the National Institute for Health and
+Care Excellence~(NICE)\footnote{https://www.nice.org.uk/}, the International
+Diabetes Federation (IDF)\footnote{https://www.idf.org/}, and Diabetes Canada\footnote{https://www.diabetes.ca/} use the same fasting plasma
+glucose threshold to diagnose diabetes. Working from the source documents,
+this means opening four guidelines, finding the relevant table or
+paragraph in each, and converting between mg/dL and mmol/L by hand. In the knowledge graph built in this thesis, the thresholds are already converted to the same unit and linked when they represent the same normalised target, so the question can be answered with a single query, while each value still points back to the organisation and page that stated it.
+
+The proposed system has four stages. First, it converts PDF guidelines into
+machine-readable records. Second, it extracts relevant information from
+those records, using a combination of pattern-based rules and a language
+model, depending on how predictable the information is. Third, it
+normalises terms and measurement units so that equivalent information can
+be compared across organisations. Finally, it uses the resulting graph to generate and validate questions whose factual content is tied to specific, traceable statements from the source guidelines.
+
+The instantiation evaluated in this thesis uses eight documents from four
+organisations covering Type~1 and Type~2 diabetes. The four-stage
+architecture is not tied to diabetes, but the specific rules used to read
+the documents, identify entities, and compare values were built for this
+corpus; applying the architecture to another domain would require adapting
+these rules.
+
+\section{Objectives and Contributions}
+\label{sec:contributions}
+
+The main contribution of this thesis is an end-to-end pipeline that converts diabetes clinical guidelines with different formats and terminology into a normalised knowledge graph that can be searched and compared. The graph is also used as a controlled factual source for generating questions. The pipeline converts documents into structured records, extracts relevant information, standardises entities and measurement units, compares information across guidelines, and generates and validates questions from the resulting graph. Its key
+outcome is that relations between guidelines, such as two organisations
+using the same diagnostic threshold once units are normalised, become
+explicit and queryable in the graph, while each statement keeps its source
+organisation and page. Its key outcome is that relationships between information stated in different guidelines, such as two organisations using the same diagnostic threshold once units are normalised, become explicit and queryable in the graph, while each statement keeps its source organisation and page.
+
+\textbf{A four-stage pipeline for multi-guideline knowledge graph
+construction.} The pipeline consists of an ingestion stage that converts
+heterogeneous PDF documents into typed element records, an extraction stage
+with rule-based and contextual components, a normalisation stage that
+deduplicates entities and converts units, and a question-generation stage
+that produces a validated question catalogue from the graph. The stages
+have defined inputs and outputs, allowing the processing steps to be
+applied and evaluated separately.
+
+\textbf{A dual-layer extraction architecture.} The extraction stage
+separates entity types between a rule-based layer and a contextual
+extraction layer. Rule-based extraction handles types with predictable
+lexical or structural patterns, including numerical targets and explicitly
+delimited recommendations, while contextual extraction is intended for
+drugs, clinical conditions, populations, and interventions that require
+more contextual interpretation. Each extracted record retains its
+extraction method for later analysis. The final corpus uses the implemented extraction paths described in Chapter~\ref{chap:evaluation}. The contextual extraction path was executed for the four entity categories of drugs, clinical conditions, populations, and interventions.
+
+\textbf{Cross-guideline equivalence edges created by normalisation.} After
+unit conversion, two numerical targets (for example, two blood glucose
+thresholds) from different organisations that state the same measurement,
+comparison, and value are linked by a directed ``equivalent'' connection.
+These edges are not directly stated in any single source document. They are
+created only after independently stated targets have been normalised into
+a common representation and compared across organisations. In the diabetes
+corpus, the final graph contains eight such connections, linking diagnostic
+thresholds across ADA, IDF, and Diabetes Canada.
+
+\textbf{A graph-anchored question generation and validation pipeline.} The
+question generation stage selects graph edges as anchors and provides the
+selected graph information as factual context to the language model. The
+validator then checks the generated question against the graph anchor,
+including answer consistency, numerical values, and guideline attribution.
+This provides an automated check that the question is consistent with its
+graph anchor, although it does not establish independent clinical
+correctness. Questions derived from cross-organisation equivalence
+connections draw on information from two guidelines simultaneously, which
+no single-guideline source in this corpus can support on its
+own~\cite{guo2024,bi2020}.
+
+\section{Thesis Structure}
+\label{sec:structure}
+
+Chapter~\ref{chap:background} reviews the background concepts on which this
+thesis builds: knowledge graphs and graph data models, information
+extraction including named entity recognition and relation extraction,
+language model grounding and hallucination, question generation, and
+clinical practice guidelines.
+
+Chapter~\ref{chap:construction} defines the four-stage pipeline formally
+and describes the design decisions behind the schema, the dual-layer
+extraction architecture, the normalisation functions, and the question
+generation and validation approach.
+
+Chapter~\ref{chap:evaluation} instantiates the pipeline on the diabetes
+guideline corpus and reports the results: the ingestion statistics, the
+final knowledge graph, the equivalence edges found by normalisation, the
+question catalogue, and the outcome of a human clinical review of
+30~questions by two medical doctors.
+
+Chapter~\ref{chap:conclusion} concludes with a summary of contributions and
+directions for future work.

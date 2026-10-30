@@ -1,0 +1,165 @@
+version: 3.0.0
+
+authorities:
+  WHO: ["World Health Organization"]
+  ADA: ["American Diabetes Association"]
+  IDF: ["International Diabetes Federation"]
+  Emerging: ["position statement", "proposal"]
+
+conditions:
+  Type 2 Diabetes:
+    aliases: ["T2DM", "Type II Diabetes", "Type 2 DM", "type 2 diabetes"]
+    coding: { ICD10: "E11" }
+  Intermediate hyperglycaemia:
+    aliases: ["Prediabetes", "Intermediate hyperglycemia", "IH", "pre-diabetes"]
+  IFG:
+    aliases: ["Impaired fasting glucose", "isolated impaired fasting glucose"]
+  IGT:
+    aliases: ["Impaired glucose tolerance"]
+  Gestational Diabetes:
+    aliases: ["GDM", "gestational diabetes mellitus"]
+  ASCVD:
+    aliases: ["atherosclerotic cardiovascular disease"]
+  HF:
+    aliases: ["heart failure", "congestive heart failure"]
+  CKD:
+    aliases: ["chronic kidney disease", "kidney disease"]
+  MASLD:
+    aliases: ["metabolic dysfunction-associated steatotic liver disease", "fatty liver"]
+
+tests_and_metrics:
+  HbA1c:
+    aliases: ["A1c", "glycated hemoglobin", "hba1c", "Hb A1c"]
+    units: ["%"]
+    loinc: "41995-2"
+  FPG:
+    aliases: ["fasting plasma glucose", "fasting glucose", "Fasting PG"]
+    units: ["mmol/L", "mg/dL"]
+    loinc: "14771-0"
+  2h OGTT:
+    aliases: ["2-hour OGTT", "2 h OGTT", "OGTT 2h", "2h plasma glucose", "two-hour plasma glucose"]
+    units: ["mmol/L", "mg/dL"]
+    loinc: "1518-0"
+  1h OGTT:
+    aliases: ["1-hour OGTT", "1 h OGTT", "OGTT 1h", "1h plasma glucose", "one-hour plasma glucose"]
+    units: ["mmol/L", "mg/dL"]
+
+  SMBG fasting:
+    aliases: ["fasting SMBG", "fasting capillary glucose", "pre-prandial glucose", "premeal SMBG"]
+    units: ["mmol/L", "mg/dL"]
+  SMBG post-meal:
+    aliases: ["post-prandial SMBG", "postprandial glucose", "after meal", "PP", "post-meal SMBG"]
+    units: ["mmol/L", "mg/dL"]
+
+  CGM Time-in-Range:
+    aliases: ["TIR", "time in range", "CGM TIR", "time-in-range"]
+    units: ["%"]
+  CGM Time-below-Range:
+    aliases: ["TBR", "time below range"]
+    units: ["%"]
+  CGM Time-above-Range:
+    aliases: ["TAR", "time above range"]
+    units: ["%"]
+  CGM Mean glucose:
+    aliases: ["CGM mean", "average glucose"]
+    units: ["mmol/L", "mg/dL"]
+  CGM GMI:
+    aliases: ["glucose management indicator", "GMI"]
+    units: ["%"]
+
+monitoring_parameters:
+  # These map to MonitoringProtocol.parameter values
+  CGM Time-in-Range:
+    aliases: ["TIR", "time in range", "time-in-range", "percent in range"]
+    units: ["%"]
+  CGM Time-below-Range:
+    aliases: ["TBR", "time below range"]
+    units: ["%"]
+  CGM Time-above-Range:
+    aliases: ["TAR", "time above range"]
+    units: ["%"]
+  SMBG frequency:
+    aliases: ["SMBG times per day", "self-monitoring frequency", "fingerstick frequency"]
+    units: ["times/day", "per day"]
+  HbA1c frequency:
+    aliases: ["A1c testing interval", "HbA1c interval"]
+    units: ["months"]
+
+risk_scores:
+  FINDRISC: ["Finnish Diabetes Risk Score"]
+  ADA Risk Test: ["ADA risk score", "ADA risk test"]
+  AUSDRISK: ["Australian type 2 diabetes risk assessment tool", "AUSDRISK score"]
+
+care_levels:
+  optimal:
+    name: "Optimal Care"
+    aliases: ["optimal", "optimum"]
+  basic:
+    name: "Basic Care"
+    aliases: ["basic"]
+
+interventions:
+  Structured lifestyle:
+    class: "Lifestyle"
+    aliases: ["intensive lifestyle", "lifestyle modification", "diet and activity", "diet + physical activity"]
+  Metformin:
+    class: "Biguanide"
+    aliases: ["metformin hydrochloride", "MET"]
+  Acarbose:
+    class: "Alpha-glucosidase inhibitor"
+    aliases: ["acarbose"]
+  Thiazolidinedione:
+    class: "TZD"
+    aliases: ["pioglitazone", "rosiglitazone", "thiazolidinedione"]
+  GLP-1 receptor agonist:
+    class: "GLP-1RA"
+    aliases: ["GLP-1 RA", "glp-1ra", "semaglutide", "liraglutide", "dulaglutide", "exenatide", "tirzepatide"]
+  SGLT2 inhibitor:
+    class: "SGLT2i"
+    aliases: ["sglt2i", "empagliflozin", "dapagliflozin", "canagliflozin", "ertugliflozin"]
+  Insulin:
+    class: "Insulin"
+    aliases: ["basal insulin", "premix insulin", "bolus insulin", "rapid-acting insulin", "long-acting insulin"]
+
+populations:
+  Adults:
+    aliases: ["adult", "aged 18 years and older", "adults"]
+  Elderly:
+    aliases: ["older adult", "older people", "elder", "elderly"]
+  IGT:
+    aliases: ["impaired glucose tolerance"]
+  Isolated IFG:
+    aliases: ["IFG without IGT", "isolated impaired fasting glucose"]
+  High risk:
+    aliases: ["at risk", "elevated risk", "risk score positive", "high-risk"]
+  Newly diagnosed:
+    aliases: ["newly-diagnosed", "at diagnosis", "new diagnosis"]
+  Obese:
+    aliases: ["obesity", "overweight", "BMI ≥30"]
+
+outcomes:
+  Prevents/delays T2D:
+    aliases: ["prevents type 2 diabetes", "delays onset of diabetes", "prevention of diabetes"]
+  Lowers HbA1c:
+    aliases: ["reduces HbA1c", "lowers A1c"]
+  HF hospitalization:
+    aliases: ["heart failure hospitalization", "HF hospitalisation"]
+  CKD progression:
+    aliases: ["kidney disease progression", "slows CKD"]
+  MACE:
+    aliases: ["major adverse cardiovascular events", "MACE events"]
+  CV death:
+    aliases: ["cardiovascular death", "CV mortality"]
+
+units:
+  "%": ["percent", "pct"]
+  "mmol/L": ["mmoll", "mmol per L", "mmol•L−1", "mmol / L", "mmol/L"]
+  "mg/dL": ["mgdl", "mg per dL", "mg / dL", "mg/dL"]
+
+comparators:
+  canonical: ["<", "≤", "=", "≥", ">", "≈"]
+  ascii_to_unicode:
+    "<=": "≤"
+    ">=": "≥"
+    "=>": "≥"
+    "=<": "≤"

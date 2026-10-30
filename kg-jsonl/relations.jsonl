@@ -1,0 +1,624 @@
+{"src": "org_4ce9ee7ba0", "type": "PUBLISHES", "dst": "gui_ec32d56d40"}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_ef5168dbf6", "label": "7.17", "page": 14}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_9d21089c52", "label": "7.3", "page": 14}
+{"src": "tes_07002cd177", "type": "HAS_PROTOCOL", "dst": "mon_2605db1664", "organization": "ADA"}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_1d73229235", "label": "11.8", "page": 16}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_ed25dacbc5", "label": "14.3", "page": 17}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_8c36c209a4", "label": "1.1", "page": 19}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_18faf84306", "label": "1.6", "page": 25}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_e42b210e86", "label": "2.1", "page": 33}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_c3888d1192", "label": "2.2", "page": 34}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_9e25ad06b6", "label": "2.5", "page": 36}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_0c858c923e", "label": "2.6", "page": 39}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_78916aac5f", "label": "2.11", "page": 41}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_3d41e1ddf6", "label": "2.23", "page": 45}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_aa90ddc0e7", "label": "2.26", "page": 46}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_0004a9c3aa", "label": "2.29", "page": 47}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_2f63ae1e2a", "label": "2.30", "page": 47}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_cc4a8a7d18", "label": "3.1", "page": 56}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_b051bf1f8a", "label": "3.7", "page": 59}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_628a6fabfb", "label": "3.11", "page": 61}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_bc9a65f7c1", "label": "3.14", "page": 61}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_63d7bd54ea", "label": "3.17", "page": 62}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_c36b8a987a", "label": "4.1", "page": 67}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_204a10ff7f", "label": "4.3", "page": 69}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_0eb47cec90", "label": "4.5", "page": 70}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_315c0e83fd", "label": "4.8", "page": 72}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_06eb214fe5", "label": "4.6", "page": 72}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_0aaa17b728", "label": "4.14", "page": 78}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_52a4f8b6d6", "label": "4.15", "page": 78}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_4ab474ed9b", "label": "4.17", "page": 79}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_890adba9d8", "label": "4.18", "page": 80}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_d82df06810", "label": "4.20", "page": 80}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_ace7992f46", "label": "4.22", "page": 81}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_d4f4c4ecc4", "label": "4.25", "page": 84}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_c78c2b7766", "label": "5.1", "page": 95}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_23f83c3263", "label": "5.42", "page": 115}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_5a00a45b42", "label": "5.48", "page": 118}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_90e0192f86", "label": "5.50", "page": 120}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_4d70912fa9", "label": "5.52", "page": 121}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_b82f1a0dd6", "label": "5.54", "page": 121}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_d52ee7998a", "label": "6.1", "page": 138}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_98344cc634", "label": "6.3", "page": 141}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_110c4af2ca", "label": "6.10", "page": 144}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_b1caeb7161", "label": "6.21", "page": 149}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_9f9128d612", "label": "7.1", "page": 156}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_1d8c67a895", "label": "7.10", "page": 158}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_b9d1f9ee90", "label": "7.21", "page": 163}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_866f22fb35", "label": "7.27", "page": 166}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_ba2f0bfb95", "label": "7.28", "page": 166}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_a57e392775", "label": "7.29", "page": 167}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_c4cf56973b", "label": "8.1", "page": 172}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_25f1fadf07", "label": "8.7", "page": 174}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_9966cacc3b", "label": "8.22", "page": 181}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_9ff3e9377e", "label": "9.1", "page": 189}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_5644d03717", "label": "9.5", "page": 195}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_b329a463b7", "label": "9.31", "page": 210}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_71c361912a", "label": "10.1", "page": 223}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_d0d2f79894", "label": "10.3", "page": 224}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_5627a0be17", "label": "10.5", "page": 227}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_55bcecfba3", "label": "10.13", "page": 228}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_76a1cefc51", "label": "10.14", "page": 228}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_23eabbd07b", "label": "10.18", "page": 229}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_7bad2d424d", "label": "10.16", "page": 229}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_6b1b486ca4", "label": "10.26", "page": 229}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_61b4b55102", "label": "10.29", "page": 233}
+{"src": "gly_4c0745e94d", "type": "MEASURED_BY", "dst": "tes_8bfc326be2"}
+{"src": "rec_61b4b55102", "type": "SPECIFIES_TARGET", "dst": "gly_4c0745e94d"}
+{"src": "gly_3befe9ba65", "type": "MEASURED_BY", "dst": "tes_8bfc326be2"}
+{"src": "rec_61b4b55102", "type": "SPECIFIES_TARGET", "dst": "gly_3befe9ba65"}
+{"src": "gly_5874cd08ed", "type": "MEASURED_BY", "dst": "tes_8bfc326be2"}
+{"src": "rec_61b4b55102", "type": "SPECIFIES_TARGET", "dst": "gly_5874cd08ed"}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_1187f541ef", "label": "10.32", "page": 234}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_e05ccc33ac", "label": "10.33", "page": 235}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_98976e7397", "label": "10.37", "page": 236}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_6ecd7cf808", "label": "11.2", "page": 255}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_54858947a0", "label": "11.3", "page": 256}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_5c079bccde", "label": "11.4", "page": 256}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_c39f66895f", "label": "11.7", "page": 258}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_a757cda597", "label": "11.9", "page": 261}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_ade44ff7a5", "label": "11.12", "page": 263}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_ae4d1e0ee4", "label": "12.1", "page": 267}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_52127613d1", "label": "12.3", "page": 268}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_f7cfc94dcd", "label": "12.9", "page": 269}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_fe2565d4f1", "label": "12.15", "page": 270}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_777bd38d8b", "label": "12.17", "page": 271}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_af9a29ff61", "label": "12.20", "page": 272}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_90dd08a83e", "label": "12.23", "page": 274}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_371ff707de", "label": "13.1", "page": 283}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_7ee3d462e3", "label": "13.3", "page": 284}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_bd7e314319", "label": "13.4", "page": 287}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_82886f34c9", "label": "13.7", "page": 288}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_6de114df31", "label": "13.11", "page": 291}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_2ce2fae2bd", "label": "13.13", "page": 291}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_1462baae14", "label": "13.16", "page": 297}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_47b3fcca58", "label": "13.18", "page": 297}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_bb7c8bda0b", "label": "14.1", "page": 304}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_bc789d15ce", "label": "14.6", "page": 305}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_00eb7b17ff", "label": "14.9", "page": 307}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_632cfbe690", "label": "14.16", "page": 308}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_6cf9019914", "label": "14.25", "page": 310}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_01d4a79d72", "label": "14.33", "page": 311}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_805e1cd35d", "label": "14.29", "page": 311}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_950f40ca81", "label": "14.31", "page": 311}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_c33f1f7b17", "label": "14.41", "page": 312}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_e06ab39aae", "label": "14.80", "page": 319}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_9d4292d863", "label": "14.82", "page": 319}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_06431ce7b0", "label": "15.1", "page": 327}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_66476bf6b7", "label": "15.5", "page": 328}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_4add2baf38", "label": "15.8", "page": 330}
+{"src": "gly_a8ef4e3667", "type": "MEASURED_BY", "dst": "tes_8bfc326be2"}
+{"src": "con_f55620c379", "type": "HAS_TARGET", "dst": "gly_a8ef4e3667", "organization": "ADA", "page": 330}
+{"src": "rec_4add2baf38", "type": "SPECIFIES_TARGET", "dst": "gly_a8ef4e3667"}
+{"src": "gly_a4f2230ac6", "type": "MEASURED_BY", "dst": "tes_8bfc326be2"}
+{"src": "con_f55620c379", "type": "HAS_TARGET", "dst": "gly_a4f2230ac6", "organization": "ADA", "page": 330}
+{"src": "rec_4add2baf38", "type": "SPECIFIES_TARGET", "dst": "gly_a4f2230ac6"}
+{"src": "gly_4b2d289ed0", "type": "MEASURED_BY", "dst": "tes_6f86ece18f"}
+{"src": "con_f55620c379", "type": "HAS_TARGET", "dst": "gly_4b2d289ed0", "organization": "ADA", "page": 330}
+{"src": "rec_4add2baf38", "type": "SPECIFIES_TARGET", "dst": "gly_4b2d289ed0"}
+{"src": "gly_2048b5a826", "type": "MEASURED_BY", "dst": "tes_6f86ece18f"}
+{"src": "con_f55620c379", "type": "HAS_TARGET", "dst": "gly_2048b5a826", "organization": "ADA", "page": 330}
+{"src": "rec_4add2baf38", "type": "SPECIFIES_TARGET", "dst": "gly_2048b5a826"}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_f8fcf93d77", "label": "15.14", "page": 333}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_98568a0bf0", "label": "15.23", "page": 336}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_209f56a942", "label": "15.26", "page": 338}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_f01f0b3817", "label": "16.1", "page": 345}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_23b67db5f3", "label": "16.3", "page": 346}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_3a88a01e18", "label": "16.4", "page": 346}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_54d2c9e5b4", "label": "16.6", "page": 347}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_3cc70f14b8", "label": "16.7", "page": 348}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_a153d18ad3", "label": "16.8", "page": 348}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_41a3793cfd", "label": "16.11", "page": 349}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_a890d5f23a", "label": "16.12", "page": 350}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_c4084c993c", "label": "16.14", "page": 352}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_463e33def2", "label": "16.16", "page": 353}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "rec_27a5e82a9e", "label": "16.18", "page": 355}
+{"src": "gly_fd8218204c", "type": "MEASURED_BY", "dst": "tes_b62a73855f"}
+{"src": "gly_83f72c7aa5", "type": "MEASURED_BY", "dst": "tes_b62a73855f"}
+{"src": "gly_ca70cf4e0d", "type": "MEASURED_BY", "dst": "tes_8bfc326be2"}
+{"src": "gly_1d72a0ab10", "type": "MEASURED_BY", "dst": "tes_8bfc326be2"}
+{"src": "gly_5b714cf289", "type": "MEASURED_BY", "dst": "tes_6f86ece18f"}
+{"src": "gly_395f5f35fa", "type": "MEASURED_BY", "dst": "tes_6f86ece18f"}
+{"src": "gly_ca66ea8e23", "type": "MEASURED_BY", "dst": "tes_8bfc326be2"}
+{"src": "gly_ab6c97ca2e", "type": "MEASURED_BY", "dst": "tes_8bfc326be2"}
+{"src": "gly_31c378c012", "type": "MEASURED_BY", "dst": "tes_8bfc326be2"}
+{"src": "gly_d50848ba32", "type": "MEASURED_BY", "dst": "tes_8bfc326be2"}
+{"src": "con_7992f0ce2a", "type": "HAS_TARGET", "dst": "gly_d50848ba32", "organization": "ADA", "page": 56}
+{"src": "gly_15dc3d74d2", "type": "MEASURED_BY", "dst": "tes_8bfc326be2"}
+{"src": "con_7992f0ce2a", "type": "HAS_TARGET", "dst": "gly_15dc3d74d2", "organization": "ADA", "page": 56}
+{"src": "gly_1a52e09f85", "type": "MEASURED_BY", "dst": "tes_8bfc326be2"}
+{"src": "con_7992f0ce2a", "type": "HAS_TARGET", "dst": "gly_5874cd08ed", "organization": "ADA", "page": 233}
+{"src": "gly_b3c154c12b", "type": "MEASURED_BY", "dst": "tes_8bfc326be2"}
+{"src": "gly_4bbf49714e", "type": "MEASURED_BY", "dst": "tes_8bfc326be2"}
+{"src": "gly_7cd24e4cbd", "type": "MEASURED_BY", "dst": "tes_8bfc326be2"}
+{"src": "gly_3d1f29d7a9", "type": "MEASURED_BY", "dst": "tes_6f86ece18f"}
+{"src": "gly_0615e230ba", "type": "MEASURED_BY", "dst": "tes_6f86ece18f"}
+{"src": "gly_897e3721bb", "type": "MEASURED_BY", "dst": "tes_8bfc326be2"}
+{"src": "con_7992f0ce2a", "type": "HAS_TARGET", "dst": "gly_5b714cf289", "organization": "ADA", "page": 336, "pages": [336, 34]}
+{"src": "con_7992f0ce2a", "type": "HAS_TARGET", "dst": "gly_395f5f35fa", "organization": "ADA", "page": 336, "pages": [336, 34]}
+{"src": "gly_bbce28e03f", "type": "MEASURED_BY", "dst": "tes_8bfc326be2"}
+{"src": "gly_adad85fdf9", "type": "MEASURED_BY", "dst": "tes_8bfc326be2"}
+{"src": "gly_0302f98bf3", "type": "MEASURED_BY", "dst": "tes_6f86ece18f"}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_37634140ce", "page": 9}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_14124cadd7", "page": 14}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_724b4e5912", "page": 22}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_4c7466e6c0", "page": 22}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_1936a0fe08", "page": 22}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_a2e478d277", "page": 34}
+{"src": "gly_b22367f0f8", "type": "MEASURED_BY", "dst": "tes_4fff7405b7"}
+{"src": "con_7992f0ce2a", "type": "HAS_TARGET", "dst": "gly_b22367f0f8", "organization": "ADA", "page": 34}
+{"src": "tab_a2e478d277", "type": "SPECIFIES_TARGET", "dst": "gly_b22367f0f8"}
+{"src": "con_7992f0ce2a", "type": "HAS_TARGET", "dst": "gly_ca70cf4e0d", "organization": "ADA", "page": 34}
+{"src": "tab_a2e478d277", "type": "SPECIFIES_TARGET", "dst": "gly_ca70cf4e0d"}
+{"src": "con_7992f0ce2a", "type": "HAS_TARGET", "dst": "gly_1d72a0ab10", "organization": "ADA", "page": 34}
+{"src": "tab_a2e478d277", "type": "SPECIFIES_TARGET", "dst": "gly_1d72a0ab10"}
+{"src": "tab_a2e478d277", "type": "SPECIFIES_TARGET", "dst": "gly_5b714cf289"}
+{"src": "tab_a2e478d277", "type": "SPECIFIES_TARGET", "dst": "gly_395f5f35fa"}
+{"src": "con_7992f0ce2a", "type": "HAS_TARGET", "dst": "gly_fd8218204c", "organization": "ADA", "page": 34}
+{"src": "tab_a2e478d277", "type": "SPECIFIES_TARGET", "dst": "gly_fd8218204c"}
+{"src": "con_7992f0ce2a", "type": "HAS_TARGET", "dst": "gly_83f72c7aa5", "organization": "ADA", "page": 34}
+{"src": "tab_a2e478d277", "type": "SPECIFIES_TARGET", "dst": "gly_83f72c7aa5"}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_bec332f4fe", "page": 34}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_50a418a013", "page": 35}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_e93d649188", "page": 35}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_d2d904277d", "page": 35}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_20206eaeb5", "page": 38}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_1c815675fc", "page": 38}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_289bccdb48", "page": 38}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_014d7f16c9", "page": 41}
+{"src": "tab_014d7f16c9", "type": "DESCRIBES_PROTOCOL", "dst": "mon_d0c6df7bc3"}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_9e149e62ad", "page": 42}
+{"src": "tab_9e149e62ad", "type": "DESCRIBES_PROTOCOL", "dst": "mon_dc4969a876"}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_29f70ea933", "page": 48}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_eba5bd7d63", "page": 48}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_2275cabbdb", "page": 48}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_1cabdf609f", "page": 49}
+{"src": "tab_1cabdf609f", "type": "DESCRIBES_PROTOCOL", "dst": "mon_2a56a06dce"}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_e7e477588f", "page": 70}
+{"src": "tab_e7e477588f", "type": "DESCRIBES_PROTOCOL", "dst": "mon_92e5500e7a"}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "tre_0da719aab6", "page": 70, "source": "table"}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_52ad4ce73a", "page": 70}
+{"src": "tab_52ad4ce73a", "type": "DESCRIBES_PROTOCOL", "dst": "mon_92e5500e7a"}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_37bb9e7e14", "page": 70}
+{"src": "tab_37bb9e7e14", "type": "DESCRIBES_PROTOCOL", "dst": "mon_92e5500e7a"}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_f048bc1b06", "page": 71}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_a0d38aaa12", "page": 71}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_3a4bb1a74a", "page": 71}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_db4a0d523b", "page": 72}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_2952aa9d6f", "page": 73}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_d0dead09fe", "page": 73}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_12cc89e9e3", "page": 73}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_167643d705", "page": 74}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_e632314ec8", "page": 74}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_fdaaea4137", "page": 74}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_2caa2f2c7c", "page": 74}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_9d61e0aa08", "page": 75}
+{"src": "gly_1528b30f19", "type": "MEASURED_BY", "dst": "tes_4fff7405b7"}
+{"src": "tab_9d61e0aa08", "type": "SPECIFIES_TARGET", "dst": "gly_1528b30f19"}
+{"src": "gly_ce77debfdb", "type": "MEASURED_BY", "dst": "tes_4fff7405b7"}
+{"src": "tab_9d61e0aa08", "type": "SPECIFIES_TARGET", "dst": "gly_ce77debfdb"}
+{"src": "gly_204b99c82d", "type": "MEASURED_BY", "dst": "tes_4fff7405b7"}
+{"src": "tab_9d61e0aa08", "type": "SPECIFIES_TARGET", "dst": "gly_204b99c82d"}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_cfa7770955", "page": 99}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_2e6826cf34", "page": 99}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_7c2c627d78", "page": 100}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_31190bcc68", "page": 107}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_b4d7edadd8", "page": 107}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_8e16dad535", "page": 107}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_c5d6ceb9b1", "page": 108}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_0b63ba333f", "page": 108}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_86daea08f5", "page": 108}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_734afbe210", "page": 109}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "tre_a617e8891c", "page": 109, "source": "table"}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_4a1d802ce9", "page": 109}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_f4fafbe6ff", "page": 109}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_e468a8a55f", "page": 117}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "tre_affc23a15c", "page": 117, "source": "table"}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_d4fdb951a0", "page": 139}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_90979c5d6b", "page": 139}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_ee729eb501", "page": 139}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_a2eee673e3", "page": 140}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_8227e4b71a", "page": 140}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_bf01dcd063", "page": 140}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_af72d4df7e", "page": 141}
+{"src": "gly_62eb11ed74", "type": "MEASURED_BY", "dst": "tes_4fff7405b7"}
+{"src": "tab_af72d4df7e", "type": "SPECIFIES_TARGET", "dst": "gly_62eb11ed74"}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_14177152d0", "page": 141}
+{"src": "tab_14177152d0", "type": "SPECIFIES_TARGET", "dst": "gly_62eb11ed74"}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_cdacd69197", "page": 141}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_5ef75caa07", "page": 145}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_b3687905ea", "page": 145}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_0b3c11f317", "page": 145}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_4d566edc83", "page": 146}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "tre_bc20bf58a0", "page": 146, "source": "table"}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_873d582baa", "page": 146}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_9bd4f99f6f", "page": 146}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_ec45384af6", "page": 148}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_058f8f9af0", "page": 148}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_7b0d582ffa", "page": 148}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_9fd864986d", "page": 148}
+{"src": "tab_9fd864986d", "type": "DESCRIBES_PROTOCOL", "dst": "mon_2f92f3ff04"}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_609d00b033", "page": 148}
+{"src": "tab_609d00b033", "type": "DESCRIBES_PROTOCOL", "dst": "mon_2f92f3ff04"}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_4540517012", "page": 148}
+{"src": "tab_4540517012", "type": "DESCRIBES_PROTOCOL", "dst": "mon_2f92f3ff04"}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_7d5ab4a73d", "page": 150}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_275a77339b", "page": 150}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_a0a7ad972e", "page": 159}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_5f2ce6f10b", "page": 159}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_48300fcebd", "page": 160}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_7c71fff107", "page": 160}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_0b56bb0571", "page": 160}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_f6f599f7c5", "page": 161}
+{"src": "tab_f6f599f7c5", "type": "DESCRIBES_PROTOCOL", "dst": "mon_8a66872fc3"}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_026db3ba85", "page": 161}
+{"src": "tab_026db3ba85", "type": "DESCRIBES_PROTOCOL", "dst": "mon_8a66872fc3"}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_2ac32785fc", "page": 161}
+{"src": "tab_2ac32785fc", "type": "DESCRIBES_PROTOCOL", "dst": "mon_8a66872fc3"}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_a31c0667b4", "page": 162}
+{"src": "tab_a31c0667b4", "type": "DESCRIBES_PROTOCOL", "dst": "mon_20b1fe8cee"}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_3c2f439ec8", "page": 162}
+{"src": "tab_3c2f439ec8", "type": "DESCRIBES_PROTOCOL", "dst": "mon_20b1fe8cee"}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_de75eee865", "page": 162}
+{"src": "tab_de75eee865", "type": "DESCRIBES_PROTOCOL", "dst": "mon_20b1fe8cee"}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_bb24cb0e95", "page": 180}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "tre_1b508ac3a0", "page": 180, "source": "table"}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_b8d80f8f48", "page": 180}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_b02103701e", "page": 180}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_22b6c40603", "page": 209}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "tre_675d369f05", "page": 209, "source": "table"}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_eb3f0036df", "page": 209}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_c3fbe1fae1", "page": 209}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_fb23e2c029", "page": 210}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "tre_50dea9eab5", "page": 210, "source": "table"}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_e01c4488eb", "page": 210}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_d3b8b5ca7f", "page": 210}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_2387a71324", "page": 230}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "tre_7ffaabb6b1", "page": 230, "source": "table"}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_9afcbb92b1", "page": 254}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_cd8bdc8489", "page": 254}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_ed2fea4798", "page": 255}
+{"src": "tab_ed2fea4798", "type": "DESCRIBES_PROTOCOL", "dst": "mon_133a554032"}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_e14a642e29", "page": 255}
+{"src": "tab_e14a642e29", "type": "DESCRIBES_PROTOCOL", "dst": "mon_133a554032"}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_b2c51f6545", "page": 255}
+{"src": "tab_b2c51f6545", "type": "DESCRIBES_PROTOCOL", "dst": "mon_133a554032"}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_78484c8595", "page": 255}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_d70d6a7080", "page": 275}
+{"src": "tab_d70d6a7080", "type": "DESCRIBES_PROTOCOL", "dst": "mon_b784807cf3"}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_0208f159b7", "page": 275}
+{"src": "tab_0208f159b7", "type": "DESCRIBES_PROTOCOL", "dst": "mon_b784807cf3"}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_b650986064", "page": 296}
+{"src": "gui_ec32d56d40", "type": "HAS_RECOMMENDATION", "dst": "tre_0e33070d35", "page": 296, "source": "table"}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_0b5c325a90", "page": 296}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_6f768b4b69", "page": 296}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_ea57f33ad2", "page": 329}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_df4814469e", "page": 331}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_bc30453976", "page": 331}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_e3a1d62f05", "page": 331}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_4533c655d3", "page": 355}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_e082afcfa7", "page": 355}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_80f4717f9e", "page": 355}
+{"src": "gui_ec32d56d40", "type": "CONTAINS_TABLE", "dst": "tab_0b3d495a1e", "page": 355}
+{"src": "org_6309538887", "type": "PUBLISHES", "dst": "gui_03cece0d7e"}
+{"src": "gui_03cece0d7e", "type": "HAS_RECOMMENDATION", "dst": "rec_b1392712c0", "label": "1", "page": 4}
+{"src": "gly_eb5b7fd6ae", "type": "MEASURED_BY", "dst": "tes_8bfc326be2"}
+{"src": "con_f55620c379", "type": "HAS_TARGET", "dst": "gly_eb5b7fd6ae", "organization": "Diabetes Canada", "page": 4, "pages": [4, 1]}
+{"src": "rec_b1392712c0", "type": "SPECIFIES_TARGET", "dst": "gly_eb5b7fd6ae"}
+{"src": "gly_ded2051698", "type": "MEASURED_BY", "dst": "tes_6f86ece18f"}
+{"src": "con_f55620c379", "type": "HAS_TARGET", "dst": "gly_ded2051698", "organization": "Diabetes Canada", "page": 4, "pages": [4, 1]}
+{"src": "rec_b1392712c0", "type": "SPECIFIES_TARGET", "dst": "gly_ded2051698"}
+{"src": "gly_45d13c365d", "type": "MEASURED_BY", "dst": "tes_b62a73855f"}
+{"src": "con_f55620c379", "type": "HAS_TARGET", "dst": "gly_45d13c365d", "organization": "Diabetes Canada", "page": 4, "pages": [4, 1]}
+{"src": "rec_b1392712c0", "type": "SPECIFIES_TARGET", "dst": "gly_45d13c365d"}
+{"src": "gui_03cece0d7e", "type": "HAS_RECOMMENDATION", "dst": "rec_02d83f4228", "label": "2", "page": 4}
+{"src": "tes_07002cd177", "type": "HAS_PROTOCOL", "dst": "mon_bb2fb69fb6", "organization": "Diabetes Canada"}
+{"src": "gui_03cece0d7e", "type": "CONTAINS_TABLE", "dst": "tab_27a2df17df", "page": 2}
+{"src": "gui_03cece0d7e", "type": "CONTAINS_TABLE", "dst": "tab_cd4a764228", "page": 2}
+{"src": "con_7992f0ce2a", "type": "HAS_TARGET", "dst": "gly_eb5b7fd6ae", "organization": "Diabetes Canada", "page": 2}
+{"src": "tab_cd4a764228", "type": "SPECIFIES_TARGET", "dst": "gly_eb5b7fd6ae"}
+{"src": "con_7992f0ce2a", "type": "HAS_TARGET", "dst": "gly_ded2051698", "organization": "Diabetes Canada", "page": 2}
+{"src": "tab_cd4a764228", "type": "SPECIFIES_TARGET", "dst": "gly_ded2051698"}
+{"src": "con_7992f0ce2a", "type": "HAS_TARGET", "dst": "gly_45d13c365d", "organization": "Diabetes Canada", "page": 2}
+{"src": "tab_cd4a764228", "type": "SPECIFIES_TARGET", "dst": "gly_45d13c365d"}
+{"src": "gui_03cece0d7e", "type": "CONTAINS_TABLE", "dst": "tab_dcb1cd209f", "page": 3}
+{"src": "gui_03cece0d7e", "type": "CONTAINS_TABLE", "dst": "tab_46f33f1b7f", "page": 4}
+{"src": "gui_03cece0d7e", "type": "CONTAINS_TABLE", "dst": "tab_c0add74335", "page": 4}
+{"src": "org_6309538887", "type": "PUBLISHES", "dst": "gui_cb62cdddd2"}
+{"src": "gui_cb62cdddd2", "type": "HAS_RECOMMENDATION", "dst": "rec_c4e33fd215", "label": "1", "page": 3}
+{"src": "gui_cb62cdddd2", "type": "HAS_RECOMMENDATION", "dst": "rec_76596ae2b8", "label": "2", "page": 3}
+{"src": "gui_cb62cdddd2", "type": "CONTAINS_TABLE", "dst": "tab_f79e32a2b0", "page": 2}
+{"src": "org_6309538887", "type": "PUBLISHES", "dst": "gui_e441f4d41f"}
+{"src": "gui_e441f4d41f", "type": "HAS_RECOMMENDATION", "dst": "rec_7db0b71b49", "label": "1", "page": 3}
+{"src": "gui_e441f4d41f", "type": "HAS_RECOMMENDATION", "dst": "rec_b716a9de69", "label": "2", "page": 3}
+{"src": "gui_e441f4d41f", "type": "HAS_RECOMMENDATION", "dst": "rec_8b7bca1f09", "label": "3", "page": 3}
+{"src": "gui_e441f4d41f", "type": "HAS_RECOMMENDATION", "dst": "rec_fa28248f0a", "label": "4", "page": 3}
+{"src": "gui_e441f4d41f", "type": "HAS_RECOMMENDATION", "dst": "rec_a05e8e4ed0", "label": "5", "page": 3}
+{"src": "gly_f9786e82e6", "type": "MEASURED_BY", "dst": "tes_8bfc326be2"}
+{"src": "gly_e02ee5b24e", "type": "MEASURED_BY", "dst": "tes_6f86ece18f"}
+{"src": "gui_e441f4d41f", "type": "CONTAINS_TABLE", "dst": "tab_c3b294cdb3", "page": 3}
+{"src": "org_6309538887", "type": "PUBLISHES", "dst": "gui_e30b398251"}
+{"src": "gui_e30b398251", "type": "HAS_RECOMMENDATION", "dst": "rec_df4d63b59d", "label": "1", "page": 4}
+{"src": "gui_e30b398251", "type": "HAS_RECOMMENDATION", "dst": "rec_3a7d0615db", "label": "2", "page": 4}
+{"src": "gui_e30b398251", "type": "HAS_RECOMMENDATION", "dst": "rec_3a3e1f5c18", "label": "3", "page": 4}
+{"src": "gui_e30b398251", "type": "HAS_RECOMMENDATION", "dst": "rec_2580a6b18c", "label": "4", "page": 4}
+{"src": "gui_e30b398251", "type": "HAS_RECOMMENDATION", "dst": "rec_97b69be25d", "label": "5", "page": 4}
+{"src": "gui_e30b398251", "type": "HAS_RECOMMENDATION", "dst": "rec_346dd0e969", "label": "6", "page": 4}
+{"src": "gui_e30b398251", "type": "HAS_RECOMMENDATION", "dst": "rec_c4bf80769e", "label": "7", "page": 4}
+{"src": "gui_e30b398251", "type": "HAS_RECOMMENDATION", "dst": "rec_ca194be210", "label": "8", "page": 4}
+{"src": "gui_e30b398251", "type": "CONTAINS_TABLE", "dst": "tab_726f134f37", "page": 2}
+{"src": "org_06f344efc3", "type": "PUBLISHES", "dst": "gui_58bf2b7823"}
+{"src": "gui_58bf2b7823", "type": "HAS_RECOMMENDATION", "dst": "rec_4a38bce331", "label": "Optimal Care", "page": 15}
+{"src": "gui_58bf2b7823", "type": "HAS_RECOMMENDATION", "dst": "rec_135801253b", "label": "Basic Care", "page": 15}
+{"src": "tes_07002cd177", "type": "HAS_PROTOCOL", "dst": "mon_a25f52da32", "organization": "IDF"}
+{"src": "gly_1c97bf4168", "type": "MEASURED_BY", "dst": "tes_8bfc326be2"}
+{"src": "con_7992f0ce2a", "type": "HAS_TARGET", "dst": "gly_1c97bf4168", "organization": "IDF", "page": 18}
+{"src": "gly_f5e005783d", "type": "MEASURED_BY", "dst": "tes_6f86ece18f"}
+{"src": "con_7992f0ce2a", "type": "HAS_TARGET", "dst": "gly_f5e005783d", "organization": "IDF", "page": 18}
+{"src": "gly_d2097d7746", "type": "MEASURED_BY", "dst": "tes_8bfc326be2"}
+{"src": "gly_6ebef37621", "type": "MEASURED_BY", "dst": "tes_8bfc326be2"}
+{"src": "con_7992f0ce2a", "type": "HAS_TARGET", "dst": "gly_6ebef37621", "organization": "IDF", "page": 38}
+{"src": "gly_db8aef714c", "type": "MEASURED_BY", "dst": "tes_8bfc326be2"}
+{"src": "gly_0c2fb79ff7", "type": "MEASURED_BY", "dst": "tes_8bfc326be2"}
+{"src": "gly_27e5e1f577", "type": "MEASURED_BY", "dst": "tes_8bfc326be2"}
+{"src": "gui_58bf2b7823", "type": "CONTAINS_TABLE", "dst": "tab_4c459fa2ab", "page": 16}
+{"src": "gui_58bf2b7823", "type": "CONTAINS_TABLE", "dst": "tab_8eb30ce890", "page": 16}
+{"src": "gui_58bf2b7823", "type": "CONTAINS_TABLE", "dst": "tab_462860285c", "page": 16}
+{"src": "gui_58bf2b7823", "type": "CONTAINS_TABLE", "dst": "tab_dc842d920c", "page": 22}
+{"src": "gui_58bf2b7823", "type": "CONTAINS_TABLE", "dst": "tab_0d76c15dd9", "page": 22}
+{"src": "gui_58bf2b7823", "type": "CONTAINS_TABLE", "dst": "tab_374a763433", "page": 22}
+{"src": "gui_58bf2b7823", "type": "CONTAINS_TABLE", "dst": "tab_8f7516d686", "page": 22}
+{"src": "gly_3a8be1f9d2", "type": "MEASURED_BY", "dst": "tes_4fff7405b7"}
+{"src": "tab_8f7516d686", "type": "SPECIFIES_TARGET", "dst": "gly_3a8be1f9d2"}
+{"src": "tab_8f7516d686", "type": "SPECIFIES_TARGET", "dst": "gly_1c97bf4168"}
+{"src": "tab_8f7516d686", "type": "SPECIFIES_TARGET", "dst": "gly_f5e005783d"}
+{"src": "gui_58bf2b7823", "type": "CONTAINS_TABLE", "dst": "tab_83da2621c5", "page": 22}
+{"src": "con_7992f0ce2a", "type": "HAS_TARGET", "dst": "gly_3a8be1f9d2", "organization": "IDF", "page": 22}
+{"src": "tab_83da2621c5", "type": "SPECIFIES_TARGET", "dst": "gly_3a8be1f9d2"}
+{"src": "gui_58bf2b7823", "type": "CONTAINS_TABLE", "dst": "tab_7282d97fde", "page": 22}
+{"src": "tab_7282d97fde", "type": "SPECIFIES_TARGET", "dst": "gly_3a8be1f9d2"}
+{"src": "tab_7282d97fde", "type": "SPECIFIES_TARGET", "dst": "gly_1c97bf4168"}
+{"src": "tab_7282d97fde", "type": "SPECIFIES_TARGET", "dst": "gly_f5e005783d"}
+{"src": "gui_58bf2b7823", "type": "CONTAINS_TABLE", "dst": "tab_1f96cca54f", "page": 41}
+{"src": "gui_58bf2b7823", "type": "CONTAINS_TABLE", "dst": "tab_86302ebf37", "page": 41}
+{"src": "gui_58bf2b7823", "type": "CONTAINS_TABLE", "dst": "tab_c0adff11c8", "page": 41}
+{"src": "gui_58bf2b7823", "type": "CONTAINS_TABLE", "dst": "tab_b5475013fe", "page": 42}
+{"src": "tab_b5475013fe", "type": "DESCRIBES_PROTOCOL", "dst": "mon_e0b0a50f30"}
+{"src": "gui_58bf2b7823", "type": "CONTAINS_TABLE", "dst": "tab_aa82c9b64b", "page": 42}
+{"src": "tab_aa82c9b64b", "type": "DESCRIBES_PROTOCOL", "dst": "mon_e0b0a50f30"}
+{"src": "gui_58bf2b7823", "type": "CONTAINS_TABLE", "dst": "tab_a009a9d178", "page": 42}
+{"src": "tab_a009a9d178", "type": "DESCRIBES_PROTOCOL", "dst": "mon_e0b0a50f30"}
+{"src": "gui_58bf2b7823", "type": "CONTAINS_TABLE", "dst": "tab_5e6b256ece", "page": 66}
+{"src": "gui_58bf2b7823", "type": "HAS_RECOMMENDATION", "dst": "tre_773c0d8ca7", "page": 66, "source": "table"}
+{"src": "gui_58bf2b7823", "type": "CONTAINS_TABLE", "dst": "tab_583df398d0", "page": 66}
+{"src": "gui_58bf2b7823", "type": "CONTAINS_TABLE", "dst": "tab_a2ac6ad47e", "page": 66}
+{"src": "gui_58bf2b7823", "type": "CONTAINS_TABLE", "dst": "tab_ab1e1dbfed", "page": 77}
+{"src": "gui_58bf2b7823", "type": "CONTAINS_TABLE", "dst": "tab_8bffafb5d6", "page": 77}
+{"src": "gui_58bf2b7823", "type": "CONTAINS_TABLE", "dst": "tab_47e42fe27a", "page": 98}
+{"src": "org_106fe167ee", "type": "PUBLISHES", "dst": "gui_ce2d02860d"}
+{"src": "gui_ce2d02860d", "type": "HAS_RECOMMENDATION", "dst": "rec_2049f12efa", "label": "1.1", "page": 6}
+{"src": "gui_ce2d02860d", "type": "HAS_RECOMMENDATION", "dst": "rec_9050697dc3", "label": "1.1.2", "page": 7}
+{"src": "gui_ce2d02860d", "type": "HAS_RECOMMENDATION", "dst": "rec_a737e4152f", "label": "1.1.4", "page": 7}
+{"src": "gui_ce2d02860d", "type": "HAS_RECOMMENDATION", "dst": "rec_02464c0545", "label": "1.1.5", "page": 7}
+{"src": "gui_ce2d02860d", "type": "HAS_RECOMMENDATION", "dst": "rec_d355e8bcfa", "label": "1.1.6", "page": 7}
+{"src": "gui_ce2d02860d", "type": "HAS_RECOMMENDATION", "dst": "rec_d167e0d108", "label": "1.1.11", "page": 9}
+{"src": "gui_ce2d02860d", "type": "HAS_RECOMMENDATION", "dst": "rec_464a60b902", "label": "1.1.12", "page": 10}
+{"src": "gui_ce2d02860d", "type": "HAS_RECOMMENDATION", "dst": "rec_68a8ab7942", "label": "1.2", "page": 10}
+{"src": "gui_ce2d02860d", "type": "HAS_RECOMMENDATION", "dst": "rec_cce34a3a81", "label": "1.2.1", "page": 10}
+{"src": "gui_ce2d02860d", "type": "HAS_RECOMMENDATION", "dst": "rec_331ed398d8", "label": "1.2.2", "page": 10}
+{"src": "gui_ce2d02860d", "type": "HAS_RECOMMENDATION", "dst": "rec_d4e908eac8", "label": "1.2.3", "page": 11}
+{"src": "gui_ce2d02860d", "type": "HAS_RECOMMENDATION", "dst": "rec_f9cab3206e", "label": "1.2.6", "page": 11}
+{"src": "gui_ce2d02860d", "type": "HAS_RECOMMENDATION", "dst": "rec_2a4db83449", "label": "1.3", "page": 12}
+{"src": "gui_ce2d02860d", "type": "HAS_RECOMMENDATION", "dst": "rec_914b3a06ea", "label": "1.3.3", "page": 12}
+{"src": "gui_ce2d02860d", "type": "HAS_RECOMMENDATION", "dst": "rec_cbbcb75ed4", "label": "1.3.4", "page": 12}
+{"src": "gui_ce2d02860d", "type": "HAS_RECOMMENDATION", "dst": "rec_aba3246f35", "label": "1.3.5", "page": 13}
+{"src": "gui_ce2d02860d", "type": "HAS_RECOMMENDATION", "dst": "rec_09f9788c2d", "label": "1.3.7", "page": 13}
+{"src": "gui_ce2d02860d", "type": "HAS_RECOMMENDATION", "dst": "rec_a62bfd5a02", "label": "1.4.1", "page": 13}
+{"src": "gui_ce2d02860d", "type": "HAS_RECOMMENDATION", "dst": "rec_23fb820068", "label": "1.4.3", "page": 14}
+{"src": "gui_ce2d02860d", "type": "HAS_RECOMMENDATION", "dst": "rec_2dad2260bc", "label": "1.4.5", "page": 14}
+{"src": "gui_ce2d02860d", "type": "HAS_RECOMMENDATION", "dst": "rec_577a3c35e0", "label": "1.4.7", "page": 14}
+{"src": "gui_ce2d02860d", "type": "HAS_RECOMMENDATION", "dst": "rec_bed6cc70fb", "label": "1.4.9", "page": 14}
+{"src": "gui_ce2d02860d", "type": "HAS_RECOMMENDATION", "dst": "rec_7a6ca25e64", "label": "1.4.10", "page": 15}
+{"src": "gui_ce2d02860d", "type": "HAS_RECOMMENDATION", "dst": "rec_6168e1e324", "label": "1.4.11", "page": 15}
+{"src": "gui_ce2d02860d", "type": "HAS_RECOMMENDATION", "dst": "rec_90b7012b48", "label": "1.4.13", "page": 15}
+{"src": "gui_ce2d02860d", "type": "HAS_RECOMMENDATION", "dst": "rec_d414c42816", "label": "1.4.14", "page": 15}
+{"src": "gui_ce2d02860d", "type": "HAS_RECOMMENDATION", "dst": "rec_90f6733cc1", "label": "1.5.1", "page": 16}
+{"src": "gui_ce2d02860d", "type": "HAS_RECOMMENDATION", "dst": "rec_8a933c6481", "label": "1.5.2", "page": 16}
+{"src": "gui_ce2d02860d", "type": "HAS_RECOMMENDATION", "dst": "rec_e5f600277f", "label": "1.6.1", "page": 17}
+{"src": "gui_ce2d02860d", "type": "HAS_RECOMMENDATION", "dst": "rec_38980aa273", "label": "1.6.2", "page": 17}
+{"src": "gui_ce2d02860d", "type": "HAS_RECOMMENDATION", "dst": "rec_a6e74692c9", "label": "1.6.3", "page": 17}
+{"src": "gui_ce2d02860d", "type": "HAS_RECOMMENDATION", "dst": "rec_d498de273d", "label": "1.6.8", "page": 18}
+{"src": "gui_ce2d02860d", "type": "HAS_RECOMMENDATION", "dst": "rec_fdf09cc460", "label": "1.6.9", "page": 18}
+{"src": "tes_07002cd177", "type": "HAS_PROTOCOL", "dst": "mon_41cc65fe2b", "organization": "NICE"}
+{"src": "gui_ce2d02860d", "type": "HAS_RECOMMENDATION", "dst": "rec_4e97ba14c1", "label": "1.6.12", "page": 21}
+{"src": "gui_ce2d02860d", "type": "HAS_RECOMMENDATION", "dst": "rec_f5e9f74c60", "label": "1.6.17", "page": 21}
+{"src": "gui_ce2d02860d", "type": "HAS_RECOMMENDATION", "dst": "rec_f987587022", "label": "1.6.18", "page": 22}
+{"src": "gui_ce2d02860d", "type": "HAS_RECOMMENDATION", "dst": "rec_32d8d3c626", "label": "1.6.22", "page": 23}
+{"src": "gui_ce2d02860d", "type": "HAS_RECOMMENDATION", "dst": "rec_6b95449c42", "label": "1.6.26", "page": 24}
+{"src": "gui_ce2d02860d", "type": "HAS_RECOMMENDATION", "dst": "rec_6518bc7be6", "label": "1.7.2", "page": 24}
+{"src": "gui_ce2d02860d", "type": "HAS_RECOMMENDATION", "dst": "rec_f3d5bf72d6", "label": "1.7.3", "page": 25}
+{"src": "gui_ce2d02860d", "type": "HAS_RECOMMENDATION", "dst": "rec_35be95185c", "label": "1.7.4", "page": 25}
+{"src": "gui_ce2d02860d", "type": "HAS_RECOMMENDATION", "dst": "rec_40bdf271ae", "label": "1.7.5", "page": 25}
+{"src": "gui_ce2d02860d", "type": "HAS_RECOMMENDATION", "dst": "rec_2e39be8ec1", "label": "1.7.9", "page": 26}
+{"src": "gui_ce2d02860d", "type": "HAS_RECOMMENDATION", "dst": "rec_5053d1251c", "label": "1.7.11", "page": 27}
+{"src": "gui_ce2d02860d", "type": "HAS_RECOMMENDATION", "dst": "rec_6c6f17601b", "label": "1.7.19", "page": 27}
+{"src": "gui_ce2d02860d", "type": "HAS_RECOMMENDATION", "dst": "rec_cfc0829236", "label": "1.7.20", "page": 28}
+{"src": "gui_ce2d02860d", "type": "HAS_RECOMMENDATION", "dst": "rec_dc5b17afdd", "label": "1.7.21", "page": 28}
+{"src": "gui_ce2d02860d", "type": "HAS_RECOMMENDATION", "dst": "rec_68c9e30662", "label": "1.7.26", "page": 29}
+{"src": "gui_ce2d02860d", "type": "HAS_RECOMMENDATION", "dst": "rec_5881ea67f3", "label": "1.8", "page": 29}
+{"src": "gui_ce2d02860d", "type": "HAS_RECOMMENDATION", "dst": "rec_f5c9bd4d92", "label": "1.9", "page": 30}
+{"src": "gui_ce2d02860d", "type": "HAS_RECOMMENDATION", "dst": "rec_f00f81741f", "label": "1.9.1", "page": 30}
+{"src": "gui_ce2d02860d", "type": "HAS_RECOMMENDATION", "dst": "rec_baf5c62162", "label": "1.9.6", "page": 30}
+{"src": "gui_ce2d02860d", "type": "HAS_RECOMMENDATION", "dst": "rec_5ef9a090ac", "label": "1.9.11", "page": 31}
+{"src": "gui_ce2d02860d", "type": "HAS_RECOMMENDATION", "dst": "rec_8d0996c617", "label": "1.9.12", "page": 31}
+{"src": "gui_ce2d02860d", "type": "HAS_RECOMMENDATION", "dst": "rec_a934401d88", "label": "1.9.14", "page": 32}
+{"src": "gui_ce2d02860d", "type": "HAS_RECOMMENDATION", "dst": "rec_af25dcfef3", "label": "1.10.2", "page": 33}
+{"src": "gui_ce2d02860d", "type": "HAS_RECOMMENDATION", "dst": "rec_760be83693", "label": "1.10.3", "page": 33}
+{"src": "gui_ce2d02860d", "type": "HAS_RECOMMENDATION", "dst": "rec_a8c3e4de8e", "label": "1.10.5", "page": 34}
+{"src": "gui_ce2d02860d", "type": "HAS_RECOMMENDATION", "dst": "rec_8c49fc5a88", "label": "1.10.6", "page": 34}
+{"src": "gui_ce2d02860d", "type": "HAS_RECOMMENDATION", "dst": "rec_326d5e320f", "label": "1.10.7", "page": 34}
+{"src": "gui_ce2d02860d", "type": "HAS_RECOMMENDATION", "dst": "rec_13c6775a40", "label": "1.10.10", "page": 34}
+{"src": "gui_ce2d02860d", "type": "HAS_RECOMMENDATION", "dst": "rec_4a1021a311", "label": "1.10.11", "page": 34}
+{"src": "gui_ce2d02860d", "type": "HAS_RECOMMENDATION", "dst": "rec_a144535b78", "label": "1.11.1", "page": 35}
+{"src": "gui_ce2d02860d", "type": "HAS_RECOMMENDATION", "dst": "rec_63081027c2", "label": "1.12", "page": 35}
+{"src": "gui_ce2d02860d", "type": "HAS_RECOMMENDATION", "dst": "rec_1dbcde4714", "label": "1.12.1", "page": 35}
+{"src": "gui_ce2d02860d", "type": "HAS_RECOMMENDATION", "dst": "rec_584b588636", "label": "1.12.2", "page": 35}
+{"src": "gui_ce2d02860d", "type": "HAS_RECOMMENDATION", "dst": "rec_78edc48485", "label": "1.12.6", "page": 36}
+{"src": "gui_ce2d02860d", "type": "HAS_RECOMMENDATION", "dst": "rec_72ddac1eb7", "label": "1.12.8", "page": 37}
+{"src": "gui_ce2d02860d", "type": "HAS_RECOMMENDATION", "dst": "rec_a7f16e4960", "label": "1.12.9", "page": 37}
+{"src": "gui_ce2d02860d", "type": "HAS_RECOMMENDATION", "dst": "rec_4b555acc56", "label": "1.13", "page": 38}
+{"src": "gui_ce2d02860d", "type": "HAS_RECOMMENDATION", "dst": "rec_011f4daeac", "label": "1.13.1", "page": 38}
+{"src": "gui_ce2d02860d", "type": "HAS_RECOMMENDATION", "dst": "rec_e17b5fb8f6", "label": "1.13.3", "page": 38}
+{"src": "gui_ce2d02860d", "type": "HAS_RECOMMENDATION", "dst": "rec_b2a53078b0", "label": "1.13.5", "page": 39}
+{"src": "gui_ce2d02860d", "type": "HAS_RECOMMENDATION", "dst": "rec_04e9b8ab92", "label": "1.13.9", "page": 39}
+{"src": "gui_ce2d02860d", "type": "HAS_RECOMMENDATION", "dst": "rec_3ee36d9c57", "label": "1.14.1", "page": 40}
+{"src": "gui_ce2d02860d", "type": "HAS_RECOMMENDATION", "dst": "rec_70030ebb4e", "label": "1.14.3", "page": 40}
+{"src": "gui_ce2d02860d", "type": "HAS_RECOMMENDATION", "dst": "rec_56b725488c", "label": "1.14.5", "page": 41}
+{"src": "gui_ce2d02860d", "type": "HAS_RECOMMENDATION", "dst": "rec_b4ca57b292", "label": "1.14.7", "page": 41}
+{"src": "gui_ce2d02860d", "type": "HAS_RECOMMENDATION", "dst": "rec_9e3af1c449", "label": "1.14.9", "page": 41}
+{"src": "gui_ce2d02860d", "type": "HAS_RECOMMENDATION", "dst": "rec_c8abfb92f6", "label": "1.14.11", "page": 42}
+{"src": "gui_ce2d02860d", "type": "HAS_RECOMMENDATION", "dst": "rec_38b6650770", "label": "1.14.12", "page": 42}
+{"src": "gui_ce2d02860d", "type": "HAS_RECOMMENDATION", "dst": "rec_077c33cd72", "label": "1.14.15", "page": 42}
+{"src": "gui_ce2d02860d", "type": "HAS_RECOMMENDATION", "dst": "rec_7c638d8dd3", "label": "1.14.17", "page": 43}
+{"src": "gui_ce2d02860d", "type": "HAS_RECOMMENDATION", "dst": "rec_a7f40817d2", "label": "1.14.22", "page": 43}
+{"src": "gui_ce2d02860d", "type": "HAS_RECOMMENDATION", "dst": "rec_a7947c0190", "label": "1.14.25", "page": 44}
+{"src": "gui_ce2d02860d", "type": "HAS_RECOMMENDATION", "dst": "rec_38495353cc", "label": "1.14.26", "page": 44}
+{"src": "gui_ce2d02860d", "type": "HAS_RECOMMENDATION", "dst": "rec_903c84ffe2", "label": "1.14.27", "page": 44}
+{"src": "gui_ce2d02860d", "type": "HAS_RECOMMENDATION", "dst": "rec_9aa460e1b0", "label": "1.14.28", "page": 44}
+{"src": "gui_ce2d02860d", "type": "HAS_RECOMMENDATION", "dst": "rec_471a52046a", "label": "1.14.35", "page": 46}
+{"src": "gui_ce2d02860d", "type": "HAS_RECOMMENDATION", "dst": "rec_d97496818c", "label": "1.14.36", "page": 46}
+{"src": "gui_ce2d02860d", "type": "HAS_RECOMMENDATION", "dst": "rec_df237fff52", "label": "1.14.39", "page": 46}
+{"src": "gui_ce2d02860d", "type": "HAS_RECOMMENDATION", "dst": "rec_9ea1fc82c8", "label": "1.14.41", "page": 46}
+{"src": "gui_ce2d02860d", "type": "HAS_RECOMMENDATION", "dst": "rec_72ef0d07f9", "label": "1.14.44", "page": 47}
+{"src": "org_106fe167ee", "type": "PUBLISHES", "dst": "gui_4087c6c4b3"}
+{"src": "gui_4087c6c4b3", "type": "HAS_RECOMMENDATION", "dst": "rec_1f29189d31", "label": "1.1", "page": 8}
+{"src": "gui_4087c6c4b3", "type": "HAS_RECOMMENDATION", "dst": "rec_1bb3ec2d7a", "label": "1.1.2", "page": 8}
+{"src": "gui_4087c6c4b3", "type": "HAS_RECOMMENDATION", "dst": "rec_bb97eb2ec0", "label": "1.1.3", "page": 8}
+{"src": "gui_4087c6c4b3", "type": "HAS_RECOMMENDATION", "dst": "rec_241188e9d9", "label": "1.1.4", "page": 8}
+{"src": "gui_4087c6c4b3", "type": "HAS_RECOMMENDATION", "dst": "rec_1a8159b916", "label": "1.2", "page": 9}
+{"src": "gui_4087c6c4b3", "type": "HAS_RECOMMENDATION", "dst": "rec_f64b6f6030", "label": "1.2.2", "page": 10}
+{"src": "gui_4087c6c4b3", "type": "HAS_RECOMMENDATION", "dst": "rec_09afe03101", "label": "1.2.7", "page": 10}
+{"src": "gui_4087c6c4b3", "type": "HAS_RECOMMENDATION", "dst": "rec_50e02d1bcb", "label": "1.3.1", "page": 12}
+{"src": "gui_4087c6c4b3", "type": "HAS_RECOMMENDATION", "dst": "rec_62ac5219c0", "label": "1.3.3", "page": 13}
+{"src": "gui_4087c6c4b3", "type": "HAS_RECOMMENDATION", "dst": "rec_3589f06bd9", "label": "1.3.4", "page": 13}
+{"src": "gui_4087c6c4b3", "type": "HAS_RECOMMENDATION", "dst": "rec_1ff6490273", "label": "1.3.8", "page": 13}
+{"src": "gui_4087c6c4b3", "type": "HAS_RECOMMENDATION", "dst": "rec_cc54232354", "label": "1.4", "page": 14}
+{"src": "gui_4087c6c4b3", "type": "HAS_RECOMMENDATION", "dst": "rec_1a729fd622", "label": "1.5", "page": 15}
+{"src": "gui_4087c6c4b3", "type": "HAS_RECOMMENDATION", "dst": "rec_be3991e684", "label": "1.5.1", "page": 15}
+{"src": "gui_4087c6c4b3", "type": "HAS_RECOMMENDATION", "dst": "rec_4d1f5092a4", "label": "1.5.2", "page": 16}
+{"src": "gui_4087c6c4b3", "type": "HAS_RECOMMENDATION", "dst": "rec_8e5ebbe59e", "label": "1.5.11", "page": 18}
+{"src": "gui_4087c6c4b3", "type": "HAS_RECOMMENDATION", "dst": "rec_257e50510c", "label": "1.7.4", "page": 20}
+{"src": "gui_4087c6c4b3", "type": "HAS_RECOMMENDATION", "dst": "rec_3eb6a1097c", "label": "1.7.7", "page": 20}
+{"src": "gui_4087c6c4b3", "type": "HAS_RECOMMENDATION", "dst": "rec_56737e41fa", "label": "1.7.8", "page": 20}
+{"src": "gui_4087c6c4b3", "type": "HAS_RECOMMENDATION", "dst": "rec_6dea8e26b1", "label": "1.7.9", "page": 20}
+{"src": "gui_4087c6c4b3", "type": "HAS_RECOMMENDATION", "dst": "rec_7ba6ada7ae", "label": "1.7.10", "page": 21}
+{"src": "gui_4087c6c4b3", "type": "HAS_RECOMMENDATION", "dst": "rec_48a19cdc57", "label": "1.8", "page": 21}
+{"src": "gui_4087c6c4b3", "type": "HAS_RECOMMENDATION", "dst": "rec_dc61825b1f", "label": "1.9", "page": 23}
+{"src": "gui_4087c6c4b3", "type": "HAS_RECOMMENDATION", "dst": "rec_4529540017", "label": "1.9.4", "page": 24}
+{"src": "gui_4087c6c4b3", "type": "HAS_RECOMMENDATION", "dst": "rec_fcf746fdc8", "label": "1.10.1", "page": 25}
+{"src": "gui_4087c6c4b3", "type": "HAS_RECOMMENDATION", "dst": "rec_89ba8a37c2", "label": "1.11", "page": 26}
+{"src": "gui_4087c6c4b3", "type": "HAS_RECOMMENDATION", "dst": "rec_e0f141ada2", "label": "1.11.1", "page": 26}
+{"src": "gui_4087c6c4b3", "type": "HAS_RECOMMENDATION", "dst": "rec_99377979f2", "label": "1.11.2", "page": 26}
+{"src": "gui_4087c6c4b3", "type": "HAS_RECOMMENDATION", "dst": "rec_7e7168b898", "label": "1.12", "page": 27}
+{"src": "gui_4087c6c4b3", "type": "HAS_RECOMMENDATION", "dst": "rec_10c161c585", "label": "1.12.1", "page": 27}
+{"src": "gui_4087c6c4b3", "type": "HAS_RECOMMENDATION", "dst": "rec_095ac96f19", "label": "1.13", "page": 29}
+{"src": "gui_4087c6c4b3", "type": "HAS_RECOMMENDATION", "dst": "rec_b0f2cb0f0e", "label": "1.13.1", "page": 29}
+{"src": "gui_4087c6c4b3", "type": "HAS_RECOMMENDATION", "dst": "rec_d632fa57a1", "label": "1.13.2", "page": 29}
+{"src": "gui_4087c6c4b3", "type": "HAS_RECOMMENDATION", "dst": "rec_9c0fdc4ba4", "label": "1.14", "page": 30}
+{"src": "gui_4087c6c4b3", "type": "HAS_RECOMMENDATION", "dst": "rec_a257592921", "label": "1.14.1", "page": 30}
+{"src": "gui_4087c6c4b3", "type": "HAS_RECOMMENDATION", "dst": "rec_657afeaa13", "label": "1.14.2", "page": 30}
+{"src": "gui_4087c6c4b3", "type": "HAS_RECOMMENDATION", "dst": "rec_ea6b2c1b3e", "label": "1.15", "page": 30}
+{"src": "gui_4087c6c4b3", "type": "HAS_RECOMMENDATION", "dst": "rec_c09c65d6e5", "label": "1.15.1", "page": 31}
+{"src": "gui_4087c6c4b3", "type": "HAS_RECOMMENDATION", "dst": "rec_de983f03db", "label": "1.15.2", "page": 31}
+{"src": "gui_4087c6c4b3", "type": "HAS_RECOMMENDATION", "dst": "rec_0c52e0f4ca", "label": "1.16", "page": 31}
+{"src": "gui_4087c6c4b3", "type": "HAS_RECOMMENDATION", "dst": "rec_a5e560053c", "label": "1.16.1", "page": 31}
+{"src": "gui_4087c6c4b3", "type": "HAS_RECOMMENDATION", "dst": "rec_311b5518e1", "label": "1.16.2", "page": 32}
+{"src": "gui_4087c6c4b3", "type": "HAS_RECOMMENDATION", "dst": "rec_ae18bc045f", "label": "1.17", "page": 32}
+{"src": "gui_4087c6c4b3", "type": "HAS_RECOMMENDATION", "dst": "rec_53d4d3a9a3", "label": "1.17.1", "page": 32}
+{"src": "gui_4087c6c4b3", "type": "HAS_RECOMMENDATION", "dst": "rec_2a022c9c29", "label": "1.17.2", "page": 32}
+{"src": "gui_4087c6c4b3", "type": "HAS_RECOMMENDATION", "dst": "rec_4d7d417301", "label": "1.18", "page": 33}
+{"src": "gui_4087c6c4b3", "type": "HAS_RECOMMENDATION", "dst": "rec_7c1f5a3bef", "label": "1.18.1", "page": 33}
+{"src": "gui_4087c6c4b3", "type": "HAS_RECOMMENDATION", "dst": "rec_adbf25a4f4", "label": "1.18.2", "page": 33}
+{"src": "gui_4087c6c4b3", "type": "HAS_RECOMMENDATION", "dst": "rec_12be3dc375", "label": "1.18.3", "page": 33}
+{"src": "gui_4087c6c4b3", "type": "HAS_RECOMMENDATION", "dst": "rec_27f4e59fe5", "label": "1.18.4", "page": 33}
+{"src": "gui_4087c6c4b3", "type": "HAS_RECOMMENDATION", "dst": "rec_f4fbfc29a4", "label": "1.18.5", "page": 34}
+{"src": "gui_4087c6c4b3", "type": "HAS_RECOMMENDATION", "dst": "rec_edd1484c66", "label": "1.19.1", "page": 34}
+{"src": "gui_4087c6c4b3", "type": "HAS_RECOMMENDATION", "dst": "rec_a85750921f", "label": "1.20", "page": 37}
+{"src": "gui_4087c6c4b3", "type": "HAS_RECOMMENDATION", "dst": "rec_5b8e267ff4", "label": "1.20.1", "page": 37}
+{"src": "gui_4087c6c4b3", "type": "HAS_RECOMMENDATION", "dst": "rec_0fa0df7bef", "label": "1.20.2", "page": 37}
+{"src": "gui_4087c6c4b3", "type": "HAS_RECOMMENDATION", "dst": "rec_e1115b8084", "label": "1.21", "page": 38}
+{"src": "gui_4087c6c4b3", "type": "HAS_RECOMMENDATION", "dst": "rec_af0fa12a98", "label": "1.21.1", "page": 38}
+{"src": "gui_4087c6c4b3", "type": "HAS_RECOMMENDATION", "dst": "rec_be428d70a0", "label": "1.22.1", "page": 40}
+{"src": "gui_4087c6c4b3", "type": "HAS_RECOMMENDATION", "dst": "rec_e114f84ff6", "label": "1.22.2", "page": 40}
+{"src": "gui_4087c6c4b3", "type": "HAS_RECOMMENDATION", "dst": "rec_1f80d6c14d", "label": "1.23.1", "page": 41}
+{"src": "gui_4087c6c4b3", "type": "HAS_RECOMMENDATION", "dst": "rec_a9e82f0166", "label": "1.24", "page": 41}
+{"src": "gui_4087c6c4b3", "type": "HAS_RECOMMENDATION", "dst": "rec_701345b158", "label": "1.24.3", "page": 41}
+{"src": "gui_4087c6c4b3", "type": "HAS_RECOMMENDATION", "dst": "rec_c74ec978bd", "label": "1.24.5", "page": 42}
+{"src": "gui_4087c6c4b3", "type": "HAS_RECOMMENDATION", "dst": "rec_47b8159be9", "label": "1.24.6", "page": 42}
+{"src": "gui_4087c6c4b3", "type": "HAS_RECOMMENDATION", "dst": "rec_ff83d2e9a9", "label": "1.25", "page": 44}
+{"src": "gui_4087c6c4b3", "type": "HAS_RECOMMENDATION", "dst": "rec_7a824276dd", "label": "1.25.1", "page": 44}
+{"src": "gui_4087c6c4b3", "type": "HAS_RECOMMENDATION", "dst": "rec_4507674bc6", "label": "1.26", "page": 45}
+{"src": "gui_4087c6c4b3", "type": "HAS_RECOMMENDATION", "dst": "rec_1f4c924e02", "label": "1.26.1", "page": 45}
+{"src": "gui_4087c6c4b3", "type": "HAS_RECOMMENDATION", "dst": "rec_0338d40073", "label": "1.27", "page": 46}
+{"src": "gui_4087c6c4b3", "type": "HAS_RECOMMENDATION", "dst": "rec_f370614f5f", "label": "1.28", "page": 46}
+{"src": "gui_4087c6c4b3", "type": "HAS_RECOMMENDATION", "dst": "rec_0410751517", "label": "1.28.3", "page": 47}
+{"src": "gui_4087c6c4b3", "type": "HAS_RECOMMENDATION", "dst": "rec_56161147c1", "label": "1.29", "page": 48}
+{"src": "gui_4087c6c4b3", "type": "HAS_RECOMMENDATION", "dst": "rec_a6ad0803e3", "label": "1.29.2", "page": 48}
+{"src": "gui_4087c6c4b3", "type": "HAS_RECOMMENDATION", "dst": "rec_b578d3dbfc", "label": "1.30", "page": 49}
+{"src": "gui_4087c6c4b3", "type": "HAS_RECOMMENDATION", "dst": "rec_f6efe9ce10", "label": "1.30.1", "page": 49}
+{"src": "gui_4087c6c4b3", "type": "HAS_RECOMMENDATION", "dst": "rec_43cafc89cc", "label": "1.31.1", "page": 50}
+{"src": "gui_4087c6c4b3", "type": "HAS_RECOMMENDATION", "dst": "rec_30bbee9ca3", "label": "1.32", "page": 52}
+{"src": "gui_4087c6c4b3", "type": "HAS_RECOMMENDATION", "dst": "rec_b84c8aa31f", "label": "1.32.1", "page": 52}
+{"src": "gui_4087c6c4b3", "type": "HAS_RECOMMENDATION", "dst": "rec_9c65423d55", "label": "1.32.2", "page": 53}
+{"src": "gui_4087c6c4b3", "type": "HAS_RECOMMENDATION", "dst": "rec_6c001721fb", "label": "1.33", "page": 53}
+{"src": "gui_4087c6c4b3", "type": "HAS_RECOMMENDATION", "dst": "rec_1cbca19260", "label": "1.33.1", "page": 53}
+{"src": "gui_4087c6c4b3", "type": "HAS_RECOMMENDATION", "dst": "rec_93ed4601fc", "label": "1.33.2", "page": 53}
+{"src": "gui_4087c6c4b3", "type": "HAS_RECOMMENDATION", "dst": "rec_69da0e5622", "label": "1.34.1", "page": 54}
+{"src": "gui_4087c6c4b3", "type": "HAS_RECOMMENDATION", "dst": "rec_5b102c7553", "label": "1.34.2", "page": 54}
+{"src": "gui_4087c6c4b3", "type": "HAS_RECOMMENDATION", "dst": "rec_a5cac289b6", "label": "1.35", "page": 55}
+{"src": "gui_4087c6c4b3", "type": "HAS_RECOMMENDATION", "dst": "rec_1f89693e3c", "label": "1.35.4", "page": 55}
+{"src": "gui_4087c6c4b3", "type": "HAS_RECOMMENDATION", "dst": "rec_f8cb0efd2b", "label": "1.36", "page": 56}
+{"src": "gui_4087c6c4b3", "type": "HAS_RECOMMENDATION", "dst": "rec_4306a7777d", "label": "1.37.1", "page": 57}
+{"src": "gui_4087c6c4b3", "type": "HAS_RECOMMENDATION", "dst": "rec_5d0f289739", "label": "1.37.3", "page": 58}
+{"src": "gui_4087c6c4b3", "type": "HAS_RECOMMENDATION", "dst": "rec_361abf28e0", "label": "1.38.1", "page": 58}
+{"src": "gui_4087c6c4b3", "type": "HAS_RECOMMENDATION", "dst": "rec_2348cb5785", "label": "1.38.2", "page": 58}
+{"src": "gui_4087c6c4b3", "type": "HAS_RECOMMENDATION", "dst": "rec_6410bc42ff", "label": "1.38.3", "page": 59}
+{"src": "gui_4087c6c4b3", "type": "HAS_RECOMMENDATION", "dst": "rec_46bf4cec4d", "label": "1.38.4", "page": 59}
+{"src": "gui_4087c6c4b3", "type": "HAS_RECOMMENDATION", "dst": "rec_725fce77a6", "label": "1.39", "page": 59}
+{"src": "gui_4087c6c4b3", "type": "HAS_RECOMMENDATION", "dst": "rec_2f2aa56c39", "label": "1.40", "page": 59}
+{"src": "gui_4087c6c4b3", "type": "HAS_RECOMMENDATION", "dst": "rec_dfb6d93720", "label": "1.40.5", "page": 60}
+{"src": "gui_4087c6c4b3", "type": "HAS_RECOMMENDATION", "dst": "rec_a49eaa53b5", "label": "1.41.1", "page": 60}
+{"src": "gui_4087c6c4b3", "type": "HAS_RECOMMENDATION", "dst": "rec_6f37fd8f3e", "label": "1.42.1", "page": 60}
+{"src": "gui_4087c6c4b3", "type": "HAS_RECOMMENDATION", "dst": "rec_21e803ff89", "label": "1.43.1", "page": 61}
+{"src": "gui_4087c6c4b3", "type": "HAS_RECOMMENDATION", "dst": "rec_d850498a96", "label": "1.43.3", "page": 61}
+{"src": "gui_4087c6c4b3", "type": "HAS_RECOMMENDATION", "dst": "rec_35763405ef", "label": "1.43.4", "page": 61}
+{"src": "gui_4087c6c4b3", "type": "HAS_RECOMMENDATION", "dst": "rec_eceb70fd55", "label": "1.44", "page": 61}
+{"src": "gui_4087c6c4b3", "type": "HAS_RECOMMENDATION", "dst": "rec_21a8d40bd8", "label": "1.45.1", "page": 62}
+{"src": "gly_fd8218204c", "type": "EQUIVALENT_TO", "dst": "gly_45d13c365d", "metric": "Random PG", "op": "≥", "value_mmol_L": 11.1, "note": "Same numeric threshold across guidelines"}
+{"src": "gly_ca70cf4e0d", "type": "EQUIVALENT_TO", "dst": "gly_eb5b7fd6ae", "metric": "FPG", "op": "≥", "value_mmol_L": 7.0, "note": "Same numeric threshold across guidelines"}
+{"src": "gly_ca70cf4e0d", "type": "EQUIVALENT_TO", "dst": "gly_1c97bf4168", "metric": "FPG", "op": "≥", "value_mmol_L": 7.0, "note": "Same numeric threshold across guidelines"}
+{"src": "gly_eb5b7fd6ae", "type": "EQUIVALENT_TO", "dst": "gly_1c97bf4168", "metric": "FPG", "op": "≥", "value_mmol_L": 7.0, "note": "Same numeric threshold across guidelines"}
+{"src": "gly_5b714cf289", "type": "EQUIVALENT_TO", "dst": "gly_ded2051698", "metric": "2h-OGTT", "op": "≥", "value_mmol_L": 11.1, "note": "Same numeric threshold across guidelines"}
+{"src": "gly_5b714cf289", "type": "EQUIVALENT_TO", "dst": "gly_f5e005783d", "metric": "2h-OGTT", "op": "≥", "value_mmol_L": 11.1, "note": "Same numeric threshold across guidelines"}
+{"src": "gly_ded2051698", "type": "EQUIVALENT_TO", "dst": "gly_f5e005783d", "metric": "2h-OGTT", "op": "≥", "value_mmol_L": 11.1, "note": "Same numeric threshold across guidelines"}
+{"src": "gly_bbce28e03f", "type": "EQUIVALENT_TO", "dst": "gly_d2097d7746", "metric": "FPG", "op": "<", "value_mmol_L": 5.6, "note": "Same numeric threshold across guidelines"}
